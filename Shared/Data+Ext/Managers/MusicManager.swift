@@ -11,9 +11,9 @@ import MediaPlayer
 
 class MusicManager: ObservableObject {
     static let shared = MusicManager()
-    private let player: MPMusicPlayerController
+     let player: MPMusicPlayerController
     
-    private init() {
+     init() {
         player = MPMusicPlayerController.systemMusicPlayer
         player.beginGeneratingPlaybackNotifications()
     }

@@ -17,7 +17,7 @@ class HealthManager: ObservableObject {
     var music = MusicManager.shared
     let timer = Timer.publish(every: 1800, on: .main, in: .common).autoconnect()
     init() {
-        backgroundDelivery()
+        //backgroundDelivery()
         UIDevice.current.isProximityMonitoringEnabled = true
     }
     func backgroundDelivery() {

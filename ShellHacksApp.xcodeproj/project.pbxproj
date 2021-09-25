@@ -125,6 +125,9 @@
 		E15FCB9C26FFAD38003BA5A2 /* PopButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCB9A26FFAD38003BA5A2 /* PopButtonStyle.swift */; };
 		E15FCBA126FFB1EF003BA5A2 /* Idlev2.scn in Resources */ = {isa = PBXBuildFile; fileRef = E15FCBA026FFB1EF003BA5A2 /* Idlev2.scn */; };
 		E15FCBA226FFB1EF003BA5A2 /* Idlev2.scn in Resources */ = {isa = PBXBuildFile; fileRef = E15FCBA026FFB1EF003BA5A2 /* Idlev2.scn */; };
+		E15FCBA426FFB3B3003BA5A2 /* NightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCBA326FFB3B3003BA5A2 /* NightView.swift */; };
+		E15FCBA526FFB3B3003BA5A2 /* NightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCBA326FFB3B3003BA5A2 /* NightView.swift */; };
+		E15FCBA926FFB5E4003BA5A2 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15FCBA826FFB5E4003BA5A2 /* HealthKit.framework */; };
 		E1E84ACE26FF643E008CCD6C /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */; };
 		E1E84ACF26FF643E008CCD6C /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */; };
 /* End PBXBuildFile section */
@@ -193,6 +196,9 @@
 		E15FCB9726FFAD0B003BA5A2 /* Box3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box3DView.swift; sourceTree = "<group>"; };
 		E15FCB9A26FFAD38003BA5A2 /* PopButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopButtonStyle.swift; sourceTree = "<group>"; };
 		E15FCBA026FFB1EF003BA5A2 /* Idlev2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Idlev2.scn; sourceTree = "<group>"; };
+		E15FCBA326FFB3B3003BA5A2 /* NightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightView.swift; sourceTree = "<group>"; };
+		E15FCBA626FFB5E4003BA5A2 /* ShellHacksApp (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ShellHacksApp (iOS).entitlements"; sourceTree = "<group>"; };
+		E15FCBA826FFB5E4003BA5A2 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15FCBA926FFB5E4003BA5A2 /* HealthKit.framework in Frameworks */,
 				E1044B7E26FECFF500BACB89 /* SFSafeSymbols in Frameworks */,
 				E1044BF026FF00A300BACB89 /* HKCombine in Frameworks */,
 			);
@@ -219,11 +226,13 @@
 		E1044B4D26FECDC500BACB89 = {
 			isa = PBXGroup;
 			children = (
+				E15FCBA626FFB5E4003BA5A2 /* ShellHacksApp (iOS).entitlements */,
 				E1044BC826FED8CE00BACB89 /* ShellHacksApp--macOS--Info.plist */,
 				E1044BC726FED8CC00BACB89 /* ShellHacksApp--iOS--Info.plist */,
 				E1044B5226FECDC500BACB89 /* Shared */,
 				E1044B6126FECDC600BACB89 /* macOS */,
 				E1044B5B26FECDC600BACB89 /* Products */,
+				E15FCBA726FFB5E4003BA5A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -287,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				E1044B7126FECE2000BACB89 /* HomeView.swift */,
+				E15FCBA326FFB3B3003BA5A2 /* NightView.swift */,
 				E103876826FF5DD50072760B /* CardView.swift */,
 				E103876B26FF5DE40072760B /* CircularProgressView.swift */,
 				E1044B7926FECF7900BACB89 /* LoadingView.swift */,
@@ -388,6 +398,14 @@
 				E103875626FF4E3F0072760B /* Wavingv2.scn */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E15FCBA726FFB5E4003BA5A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E15FCBA826FFB5E4003BA5A2 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -563,6 +581,7 @@
 				E1044BCA26FED93900BACB89 /* OnboardingView.swift in Sources */,
 				E1044B8B26FED65E00BACB89 /* CurvedGradientButtonStyle.swift in Sources */,
 				E1044BD526FEE47C00BACB89 /* LoginManager.swift in Sources */,
+				E15FCBA426FFB3B3003BA5A2 /* NightView.swift in Sources */,
 				E1044BF226FF011300BACB89 /* MusicManager.swift in Sources */,
 				E1044BEC26FEFE9900BACB89 /* ConfettiView.swift in Sources */,
 				E1044BD126FEE12700BACB89 /* ButtonData.swift in Sources */,
@@ -600,6 +619,7 @@
 				E1044BCB26FED93900BACB89 /* OnboardingView.swift in Sources */,
 				E1044B8C26FED65E00BACB89 /* CurvedGradientButtonStyle.swift in Sources */,
 				E1044BD626FEE47C00BACB89 /* LoginManager.swift in Sources */,
+				E15FCBA526FFB3B3003BA5A2 /* NightView.swift in Sources */,
 				E1044BF326FF011300BACB89 /* MusicManager.swift in Sources */,
 				E1044BED26FEFE9900BACB89 /* ConfettiView.swift in Sources */,
 				E1044BD226FEE12700BACB89 /* ButtonData.swift in Sources */,
@@ -741,6 +761,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ShellHacksApp (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9NG3C5HP77;
@@ -772,6 +793,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ShellHacksApp (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9NG3C5HP77;

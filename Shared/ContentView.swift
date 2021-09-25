@@ -9,8 +9,8 @@ import SwiftUI
 import SFSafeSymbols
 
 struct ContentView: View {
-    @State var loading = true
-    @State var onboardingFinished = false //= UserDefaults.standard.bool(forKey: "onboardingFinished")
+    @State var loading = false
+    @State var onboardingFinished = true //= UserDefaults.standard.bool(forKey: "onboardingFinished")
    @StateObject var quizManager = QuizManager()
     var body: some View {
        
@@ -19,9 +19,9 @@ struct ContentView: View {
                 OnboardingView(onboardingFinished: $onboardingFinished)
                 .transition(.opacity)
             } else {
-                
+                NightView()
                 //HomeView()
-                QuizView(quizManager: quizManager)
+                //QuizView(quizManager: quizManager)
             }
         
         if loading {
