@@ -7,14 +7,21 @@
 
 import SwiftUI
 import SFSafeSymbols
-struct Quiz {
+
+struct Course {
     var id: String
-    var questions: [Question]
+    var quizzes: [Quiz]
     var tags: [String]
     var image: SFSymbol
 }
+struct Quiz: Codable {
+    var id: String
+    var questions: [Question]
+    var tags: [String]
+    var image: SFSymbol.RawValue
+}
 
-struct Question {
+struct Question: Codable {
     var id: String
     var questionStr: String
     var a: String
@@ -22,4 +29,11 @@ struct Question {
     var c: String
     var correct: String
     var picked: String
+    var tags: [String]?
+    var image: SFSymbol.RawValue?
+}
+
+struct APIInput: Codable {
+    var id: String
+    var text: String
 }

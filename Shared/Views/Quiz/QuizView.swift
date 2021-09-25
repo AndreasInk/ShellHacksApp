@@ -9,10 +9,19 @@ import SwiftUI
 
 struct QuizView: View {
     @State var quiz: Quiz
+    @State var currentQuestion = 0
+    @State var takingQuiz = false
     var body: some View {
-        ForEach($quiz.questions, id: \.id) { $question in
-            QuestionsView(question: $question)
-        }
+        TabView(selection: $currentQuestion) {
+            if #available(iOS 15.0, *) {
+                ForEach(Array($quiz.questions.enumerated()), id: \.offset) { i, $question in
+                    QuestionsView(takingQuiz: $takingQuiz, quiz: $quiz, question: $question, currentQuestion: $currentQuestion)
+                        .tag(i)
+                }
+            } else {
+                // Fallback on earlier versions
+            }
+    }
     }
 }
 

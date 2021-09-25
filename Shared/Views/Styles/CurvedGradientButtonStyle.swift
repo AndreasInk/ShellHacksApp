@@ -12,7 +12,7 @@ struct CurvedGradientButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(.custom("Poppins-Bold", size: 18, relativeTo: .headline))
-            .foregroundColor(Color(button.type == .Gradient ? .white : .lightText))
+            //.foregroundColor(Color(.))
             .padding()
            
             .background(button.type == .Gradient ? AnyView(button.gradient.cornerRadius(20)) : AnyView(RoundedRectangle(cornerRadius: 20).stroke(Color.Dark, lineWidth: 4)))

@@ -28,6 +28,7 @@ struct OnboardingView: View {
                     if self.onboarding.indices.contains(currentSlide + 1) {
                     currentSlide += 1
                     } else {
+                        UserDefaults.standard.set(true, forKey: "onboardingFinished")
                         onboardingFinished = true
                     }
                 }) {
