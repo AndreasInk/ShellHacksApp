@@ -10,6 +10,7 @@ import SFSafeSymbols
 struct LoginView: View {
     @State var user = User(id: "", name: "", userName: "", email: "", password: "")
     var body: some View {
+        ScrollView(showsIndicators: false) {
         VStack {
         Image(systemSymbol: .sleep)
             .foregroundColor(.Primary)
@@ -35,10 +36,11 @@ struct LoginView: View {
         }) {
             Text("Login")
                 .frame(width: 220)
-        }.buttonStyle(CurvedGradientButtonStyle(button: ButtonData(id: UUID().uuidString, type: .Outline, gradient: .Primary)))
+        }.buttonStyle(CurvedBorderButtonStyle(button: ButtonData(id: UUID().uuidString, type: .Outline, gradient: .Primary)))
                 .padding(.vertical)
                
     }
+        }
     }
 }
 

@@ -12,6 +12,12 @@ import SFSafeSymbols
 class QuizManager: ObservableObject {
     @Published var queued = false
     @Published var quiz = Quiz(id: "", questions: [Question](), tags: [String](), image: SFSymbol.sleep.rawValue)
+    
+    @Published var takingQuiz: Bool = true
+    @Published var choice: String = ""
+    @Published var question: Question?
+    @Published var currentQuestion: Int = 0
+    
     init() {
         
     }

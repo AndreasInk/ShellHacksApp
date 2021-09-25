@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E103875726FF4E3F0072760B /* Wavingv2.scn in Resources */ = {isa = PBXBuildFile; fileRef = E103875626FF4E3F0072760B /* Wavingv2.scn */; };
+		E103875826FF4E3F0072760B /* Wavingv2.scn in Resources */ = {isa = PBXBuildFile; fileRef = E103875626FF4E3F0072760B /* Wavingv2.scn */; };
+		E103876326FF51CE0072760B /* Climbingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E103876226FF51CE0072760B /* Climbingv2.dae */; };
+		E103876426FF51CE0072760B /* Climbingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E103876226FF51CE0072760B /* Climbingv2.dae */; };
 		E1044B6326FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B5326FECDC500BACB89 /* ShellHacksAppApp.swift */; };
 		E1044B6426FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B5326FECDC500BACB89 /* ShellHacksAppApp.swift */; };
 		E1044B6526FECDC600BACB89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B5426FECDC500BACB89 /* ContentView.swift */; };
@@ -91,9 +95,27 @@
 		E1044BF026FF00A300BACB89 /* HKCombine in Frameworks */ = {isa = PBXBuildFile; productRef = E1044BEF26FF00A300BACB89 /* HKCombine */; };
 		E1044BF226FF011300BACB89 /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BF126FF011300BACB89 /* MusicManager.swift */; };
 		E1044BF326FF011300BACB89 /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BF126FF011300BACB89 /* MusicManager.swift */; };
+		E1044C0126FF41EF00BACB89 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044C0026FF41EF00BACB89 /* SceneView.swift */; };
+		E1044C0226FF41EF00BACB89 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044C0026FF41EF00BACB89 /* SceneView.swift */; };
+		E1044C0426FF422100BACB89 /* AnimationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044C0326FF422000BACB89 /* AnimationData.swift */; };
+		E1044C0526FF422100BACB89 /* AnimationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044C0326FF422000BACB89 /* AnimationData.swift */; };
+		E1044C0C26FF449600BACB89 /* Cheeringv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0626FF449300BACB89 /* Cheeringv2.dae */; };
+		E1044C0D26FF449600BACB89 /* Cheeringv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0626FF449300BACB89 /* Cheeringv2.dae */; };
+		E1044C0E26FF449600BACB89 /* ThumbsUpv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0726FF449400BACB89 /* ThumbsUpv2.dae */; };
+		E1044C0F26FF449600BACB89 /* ThumbsUpv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0726FF449400BACB89 /* ThumbsUpv2.dae */; };
+		E1044C1026FF449600BACB89 /* Wavingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0826FF449400BACB89 /* Wavingv2.dae */; };
+		E1044C1126FF449600BACB89 /* Wavingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0826FF449400BACB89 /* Wavingv2.dae */; };
+		E1044C1226FF449600BACB89 /* Sittingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0926FF449500BACB89 /* Sittingv2.dae */; };
+		E1044C1326FF449600BACB89 /* Sittingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0926FF449500BACB89 /* Sittingv2.dae */; };
+		E1044C1426FF449600BACB89 /* Walkingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0A26FF449600BACB89 /* Walkingv2.dae */; };
+		E1044C1526FF449600BACB89 /* Walkingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0A26FF449600BACB89 /* Walkingv2.dae */; };
+		E1044C1626FF449600BACB89 /* Pointingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0B26FF449600BACB89 /* Pointingv2.dae */; };
+		E1044C1726FF449600BACB89 /* Pointingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0B26FF449600BACB89 /* Pointingv2.dae */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E103875626FF4E3F0072760B /* Wavingv2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Wavingv2.scn; sourceTree = "<group>"; };
+		E103876226FF51CE0072760B /* Climbingv2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = Climbingv2.dae; path = ../../../../../../Downloads/Animations/Climbingv2.dae; sourceTree = "<group>"; };
 		E1044B5326FECDC500BACB89 /* ShellHacksAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellHacksAppApp.swift; sourceTree = "<group>"; };
 		E1044B5426FECDC500BACB89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E1044B5526FECDC600BACB89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -140,6 +162,14 @@
 		E1044BE726FEEF5200BACB89 /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
 		E1044BEB26FEFE9900BACB89 /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
 		E1044BF126FF011300BACB89 /* MusicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
+		E1044C0026FF41EF00BACB89 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
+		E1044C0326FF422000BACB89 /* AnimationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationData.swift; sourceTree = "<group>"; };
+		E1044C0626FF449300BACB89 /* Cheeringv2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Cheeringv2.dae; sourceTree = "<group>"; };
+		E1044C0726FF449400BACB89 /* ThumbsUpv2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = ThumbsUpv2.dae; sourceTree = "<group>"; };
+		E1044C0826FF449400BACB89 /* Wavingv2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Wavingv2.dae; sourceTree = "<group>"; };
+		E1044C0926FF449500BACB89 /* Sittingv2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Sittingv2.dae; sourceTree = "<group>"; };
+		E1044C0A26FF449600BACB89 /* Walkingv2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Walkingv2.dae; sourceTree = "<group>"; };
+		E1044C0B26FF449600BACB89 /* Pointingv2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Pointingv2.dae; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +240,7 @@
 				E1044BCF26FEDF8500BACB89 /* Onboarding */,
 				E1044BE326FEEF1200BACB89 /* Quiz */,
 				E1044B8226FED1A000BACB89 /* Home */,
+				E1044C1826FF449A00BACB89 /* 3D */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +254,7 @@
 				E1044BCC26FED94300BACB89 /* Onboarding.swift */,
 				E1044BE026FEE52400BACB89 /* Quiz.swift */,
 				E1044BD026FEE12700BACB89 /* ButtonData.swift */,
+				E1044C0326FF422000BACB89 /* AnimationData.swift */,
 			);
 			path = "Data+Ext";
 			sourceTree = "<group>";
@@ -300,6 +332,30 @@
 				E1044BEB26FEFE9900BACB89 /* ConfettiView.swift */,
 			);
 			path = Quiz;
+			sourceTree = "<group>";
+		};
+		E1044C1826FF449A00BACB89 /* 3D */ = {
+			isa = PBXGroup;
+			children = (
+				E1044C0026FF41EF00BACB89 /* SceneView.swift */,
+				E1044C1926FF44A200BACB89 /* Models */,
+			);
+			path = 3D;
+			sourceTree = "<group>";
+		};
+		E1044C1926FF44A200BACB89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E103876226FF51CE0072760B /* Climbingv2.dae */,
+				E1044C0626FF449300BACB89 /* Cheeringv2.dae */,
+				E1044C0B26FF449600BACB89 /* Pointingv2.dae */,
+				E1044C0926FF449500BACB89 /* Sittingv2.dae */,
+				E1044C0726FF449400BACB89 /* ThumbsUpv2.dae */,
+				E1044C0A26FF449600BACB89 /* Walkingv2.dae */,
+				E1044C0826FF449400BACB89 /* Wavingv2.dae */,
+				E103875626FF4E3F0072760B /* Wavingv2.scn */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,8 +447,11 @@
 			files = (
 				E1044BBD26FED8B300BACB89 /* Poppins-Black.ttf in Resources */,
 				E1044BA526FED8B300BACB89 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				E1044C1026FF449600BACB89 /* Wavingv2.dae in Resources */,
 				E1044BAD26FED8B300BACB89 /* Poppins-SemiBoldItalic.ttf in Resources */,
 				E1044BBF26FED8B300BACB89 /* Poppins-Thin.ttf in Resources */,
+				E103875726FF4E3F0072760B /* Wavingv2.scn in Resources */,
+				E1044C0E26FF449600BACB89 /* ThumbsUpv2.dae in Resources */,
 				E1044BC326FED8B300BACB89 /* Poppins-Italic.ttf in Resources */,
 				E1044BB726FED8B300BACB89 /* Poppins-Regular.ttf in Resources */,
 				E1044BAB26FED8B300BACB89 /* Poppins-Medium.ttf in Resources */,
@@ -401,14 +460,19 @@
 				E1044BC526FED8B300BACB89 /* Poppins-MediumItalic.ttf in Resources */,
 				E1044BA326FED8B300BACB89 /* Poppins-ThinItalic.ttf in Resources */,
 				E1044BBB26FED8B300BACB89 /* Poppins-Bold.ttf in Resources */,
+				E103876326FF51CE0072760B /* Climbingv2.dae in Resources */,
+				E1044C1626FF449600BACB89 /* Pointingv2.dae in Resources */,
 				E1044BB526FED8B300BACB89 /* OFL.txt in Resources */,
 				E1044BB126FED8B300BACB89 /* Poppins-ExtraBold.ttf in Resources */,
 				E1044BB926FED8B300BACB89 /* Poppins-LightItalic.ttf in Resources */,
+				E1044C0C26FF449600BACB89 /* Cheeringv2.dae in Resources */,
 				E1044BA126FED8B300BACB89 /* Poppins-ExtraLight.ttf in Resources */,
 				E1044B6726FECDC600BACB89 /* Assets.xcassets in Resources */,
 				E1044BC126FED8B300BACB89 /* Poppins-SemiBold.ttf in Resources */,
+				E1044C1426FF449600BACB89 /* Walkingv2.dae in Resources */,
 				E1044BA726FED8B300BACB89 /* Poppins-BoldItalic.ttf in Resources */,
 				E1044BB326FED8B300BACB89 /* Poppins-BlackItalic.ttf in Resources */,
+				E1044C1226FF449600BACB89 /* Sittingv2.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,8 +482,11 @@
 			files = (
 				E1044BBE26FED8B300BACB89 /* Poppins-Black.ttf in Resources */,
 				E1044BA626FED8B300BACB89 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				E1044C1126FF449600BACB89 /* Wavingv2.dae in Resources */,
 				E1044BAE26FED8B300BACB89 /* Poppins-SemiBoldItalic.ttf in Resources */,
 				E1044BC026FED8B300BACB89 /* Poppins-Thin.ttf in Resources */,
+				E103875826FF4E3F0072760B /* Wavingv2.scn in Resources */,
+				E1044C0F26FF449600BACB89 /* ThumbsUpv2.dae in Resources */,
 				E1044BC426FED8B300BACB89 /* Poppins-Italic.ttf in Resources */,
 				E1044BB826FED8B300BACB89 /* Poppins-Regular.ttf in Resources */,
 				E1044BAC26FED8B300BACB89 /* Poppins-Medium.ttf in Resources */,
@@ -428,14 +495,19 @@
 				E1044BC626FED8B300BACB89 /* Poppins-MediumItalic.ttf in Resources */,
 				E1044BA426FED8B300BACB89 /* Poppins-ThinItalic.ttf in Resources */,
 				E1044BBC26FED8B300BACB89 /* Poppins-Bold.ttf in Resources */,
+				E103876426FF51CE0072760B /* Climbingv2.dae in Resources */,
+				E1044C1726FF449600BACB89 /* Pointingv2.dae in Resources */,
 				E1044BB626FED8B300BACB89 /* OFL.txt in Resources */,
 				E1044BB226FED8B300BACB89 /* Poppins-ExtraBold.ttf in Resources */,
 				E1044BBA26FED8B300BACB89 /* Poppins-LightItalic.ttf in Resources */,
+				E1044C0D26FF449600BACB89 /* Cheeringv2.dae in Resources */,
 				E1044BA226FED8B300BACB89 /* Poppins-ExtraLight.ttf in Resources */,
 				E1044B6826FECDC600BACB89 /* Assets.xcassets in Resources */,
 				E1044BC226FED8B300BACB89 /* Poppins-SemiBold.ttf in Resources */,
+				E1044C1526FF449600BACB89 /* Walkingv2.dae in Resources */,
 				E1044BA826FED8B300BACB89 /* Poppins-BoldItalic.ttf in Resources */,
 				E1044BB426FED8B300BACB89 /* Poppins-BlackItalic.ttf in Resources */,
+				E1044C1326FF449600BACB89 /* Sittingv2.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1044BDE26FEE49C00BACB89 /* QuizManager.swift in Sources */,
+				E1044C0426FF422100BACB89 /* AnimationData.swift in Sources */,
 				E1044B8826FED2AC00BACB89 /* CurvedTextFieldStyle.swift in Sources */,
 				E1044B8026FED19B00BACB89 /* LoginView.swift in Sources */,
 				E1044BE826FEEF5200BACB89 /* QuestionsView.swift in Sources */,
@@ -461,6 +534,7 @@
 				E1044B6526FECDC600BACB89 /* ContentView.swift in Sources */,
 				E1044B6326FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */,
 				E1044BE526FEEF2000BACB89 /* QuizView.swift in Sources */,
+				E1044C0126FF41EF00BACB89 /* SceneView.swift in Sources */,
 				E1044B7A26FECF7900BACB89 /* LoadingView.swift in Sources */,
 				E1044BDB26FEE49100BACB89 /* LeaderboardManager.swift in Sources */,
 				E1044BE126FEE52400BACB89 /* Quiz.swift in Sources */,
@@ -475,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1044BDF26FEE49C00BACB89 /* QuizManager.swift in Sources */,
+				E1044C0526FF422100BACB89 /* AnimationData.swift in Sources */,
 				E1044B8926FED2AC00BACB89 /* CurvedTextFieldStyle.swift in Sources */,
 				E1044B8126FED19B00BACB89 /* LoginView.swift in Sources */,
 				E1044BE926FEEF5200BACB89 /* QuestionsView.swift in Sources */,
@@ -489,6 +564,7 @@
 				E1044B6626FECDC600BACB89 /* ContentView.swift in Sources */,
 				E1044B6426FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */,
 				E1044BE626FEEF2000BACB89 /* QuizView.swift in Sources */,
+				E1044C0226FF41EF00BACB89 /* SceneView.swift in Sources */,
 				E1044B7B26FECF7900BACB89 /* LoadingView.swift in Sources */,
 				E1044BDC26FEE49100BACB89 /* LeaderboardManager.swift in Sources */,
 				E1044BE226FEE52400BACB89 /* Quiz.swift in Sources */,

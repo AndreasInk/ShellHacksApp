@@ -9,10 +9,20 @@ import SwiftUI
 import SFSafeSymbols
 
 struct ContentView: View {
-    @State var loading = false
+    @State var loading = true
     @State var onboardingFinished = UserDefaults.standard.bool(forKey: "onboardingFinished")
-    @State var questions = [Question(id: UUID().uuidString, questionStr: "Hello", a: "Hello World", b: "Hello W0rld", c: "Hell0 World", correct: "Hello", picked: ""), Question(id: UUID().uuidString, questionStr: "Hello", a: "Hello World", b: "Hello W0rld", c: "Hell0 World", correct: "Hello", picked: "")]
+   
     var body: some View {
+       
+        ZStack {
+            if !onboardingFinished {
+                OnboardingView(onboardingFinished: $onboardingFinished)
+                .transition(.opacity)
+            } else {
+                //HomeView()
+                QuizView()
+            }
+        
         if loading {
         LoadingView()
                 .onAppear() {
@@ -21,15 +31,8 @@ struct ContentView: View {
                     loading = false
                         }
                     }
-                }
-        } else {
-            if !onboardingFinished {
-                OnboardingView(onboardingFinished: $onboardingFinished)
-                .transition(.opacity)
-            } else {
-                //HomeView()
-                QuizView(quiz: Quiz(id: UUID().uuidString, questions: questions, tags: [String](), image: SFSymbol.sleep.rawValue))
-            }
+             
+                }}
         }
     }
 }
