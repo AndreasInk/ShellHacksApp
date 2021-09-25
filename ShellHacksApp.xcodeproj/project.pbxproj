@@ -11,6 +11,12 @@
 		E103875826FF4E3F0072760B /* Wavingv2.scn in Resources */ = {isa = PBXBuildFile; fileRef = E103875626FF4E3F0072760B /* Wavingv2.scn */; };
 		E103876326FF51CE0072760B /* Climbingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E103876226FF51CE0072760B /* Climbingv2.dae */; };
 		E103876426FF51CE0072760B /* Climbingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E103876226FF51CE0072760B /* Climbingv2.dae */; };
+		E103876626FF59BB0072760B /* MLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E103876526FF59BB0072760B /* MLManager.swift */; };
+		E103876726FF59BB0072760B /* MLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E103876526FF59BB0072760B /* MLManager.swift */; };
+		E103876926FF5DD50072760B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E103876826FF5DD50072760B /* CardView.swift */; };
+		E103876A26FF5DD50072760B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E103876826FF5DD50072760B /* CardView.swift */; };
+		E103876C26FF5DE40072760B /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E103876B26FF5DE40072760B /* CircularProgressView.swift */; };
+		E103876D26FF5DE40072760B /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E103876B26FF5DE40072760B /* CircularProgressView.swift */; };
 		E1044B6326FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B5326FECDC500BACB89 /* ShellHacksAppApp.swift */; };
 		E1044B6426FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B5326FECDC500BACB89 /* ShellHacksAppApp.swift */; };
 		E1044B6526FECDC600BACB89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B5426FECDC500BACB89 /* ContentView.swift */; };
@@ -116,6 +122,9 @@
 /* Begin PBXFileReference section */
 		E103875626FF4E3F0072760B /* Wavingv2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Wavingv2.scn; sourceTree = "<group>"; };
 		E103876226FF51CE0072760B /* Climbingv2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = Climbingv2.dae; path = ../../../../../../Downloads/Animations/Climbingv2.dae; sourceTree = "<group>"; };
+		E103876526FF59BB0072760B /* MLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLManager.swift; sourceTree = "<group>"; };
+		E103876826FF5DD50072760B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E103876B26FF5DE40072760B /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		E1044B5326FECDC500BACB89 /* ShellHacksAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellHacksAppApp.swift; sourceTree = "<group>"; };
 		E1044B5426FECDC500BACB89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E1044B5526FECDC600BACB89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -263,6 +272,8 @@
 			isa = PBXGroup;
 			children = (
 				E1044B7126FECE2000BACB89 /* HomeView.swift */,
+				E103876826FF5DD50072760B /* CardView.swift */,
+				E103876B26FF5DE40072760B /* CircularProgressView.swift */,
 				E1044B7926FECF7900BACB89 /* LoadingView.swift */,
 			);
 			path = Home;
@@ -319,6 +330,7 @@
 				E1044BDD26FEE49C00BACB89 /* QuizManager.swift */,
 				E1044BD726FEE48700BACB89 /* HealthManager.swift */,
 				E1044BF126FF011300BACB89 /* MusicManager.swift */,
+				E103876526FF59BB0072760B /* MLManager.swift */,
 				E1044BDA26FEE49100BACB89 /* LeaderboardManager.swift */,
 			);
 			path = Managers;
@@ -524,6 +536,7 @@
 				E1044B8026FED19B00BACB89 /* LoginView.swift in Sources */,
 				E1044BE826FEEF5200BACB89 /* QuestionsView.swift in Sources */,
 				E1044B7226FECE2000BACB89 /* HomeView.swift in Sources */,
+				E103876626FF59BB0072760B /* MLManager.swift in Sources */,
 				E1044BCA26FED93900BACB89 /* OnboardingView.swift in Sources */,
 				E1044B8B26FED65E00BACB89 /* CurvedGradientButtonStyle.swift in Sources */,
 				E1044BD526FEE47C00BACB89 /* LoginManager.swift in Sources */,
@@ -531,6 +544,7 @@
 				E1044BEC26FEFE9900BACB89 /* ConfettiView.swift in Sources */,
 				E1044BD126FEE12700BACB89 /* ButtonData.swift in Sources */,
 				E1044BCD26FED94300BACB89 /* Onboarding.swift in Sources */,
+				E103876926FF5DD50072760B /* CardView.swift in Sources */,
 				E1044B6526FECDC600BACB89 /* ContentView.swift in Sources */,
 				E1044B6326FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */,
 				E1044BE526FEEF2000BACB89 /* QuizView.swift in Sources */,
@@ -540,6 +554,7 @@
 				E1044BE126FEE52400BACB89 /* Quiz.swift in Sources */,
 				E1044B7526FECEB400BACB89 /* Extensions.swift in Sources */,
 				E1044B8426FED22F00BACB89 /* User.swift in Sources */,
+				E103876C26FF5DE40072760B /* CircularProgressView.swift in Sources */,
 				E1044BD826FEE48700BACB89 /* HealthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,6 +569,7 @@
 				E1044B8126FED19B00BACB89 /* LoginView.swift in Sources */,
 				E1044BE926FEEF5200BACB89 /* QuestionsView.swift in Sources */,
 				E1044B7326FECE2000BACB89 /* HomeView.swift in Sources */,
+				E103876726FF59BB0072760B /* MLManager.swift in Sources */,
 				E1044BCB26FED93900BACB89 /* OnboardingView.swift in Sources */,
 				E1044B8C26FED65E00BACB89 /* CurvedGradientButtonStyle.swift in Sources */,
 				E1044BD626FEE47C00BACB89 /* LoginManager.swift in Sources */,
@@ -561,6 +577,7 @@
 				E1044BED26FEFE9900BACB89 /* ConfettiView.swift in Sources */,
 				E1044BD226FEE12700BACB89 /* ButtonData.swift in Sources */,
 				E1044BCE26FED94300BACB89 /* Onboarding.swift in Sources */,
+				E103876A26FF5DD50072760B /* CardView.swift in Sources */,
 				E1044B6626FECDC600BACB89 /* ContentView.swift in Sources */,
 				E1044B6426FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */,
 				E1044BE626FEEF2000BACB89 /* QuizView.swift in Sources */,
@@ -570,6 +587,7 @@
 				E1044BE226FEE52400BACB89 /* Quiz.swift in Sources */,
 				E1044B7626FECEB400BACB89 /* Extensions.swift in Sources */,
 				E1044B8526FED22F00BACB89 /* User.swift in Sources */,
+				E103876D26FF5DE40072760B /* CircularProgressView.swift in Sources */,
 				E1044BD926FEE48700BACB89 /* HealthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

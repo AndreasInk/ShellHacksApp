@@ -11,13 +11,13 @@ import SFSafeSymbols
 struct Course {
     var id: String
     var quizzes: [Quiz]
-    var tags: [String]
+    var tag: String
     var image: SFSymbol
 }
 struct Quiz: Codable {
     var id: String
     var questions: [Question]
-    var tags: [String]
+    var tag: String
     var image: SFSymbol.RawValue
 }
 
@@ -29,7 +29,7 @@ struct Question: Codable {
     var c: String
     var correct: String
     var picked: String
-    var tags: [String]?
+    var tag: String?
     var image: SFSymbol.RawValue?
 }
 

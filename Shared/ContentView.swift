@@ -10,7 +10,7 @@ import SFSafeSymbols
 
 struct ContentView: View {
     @State var loading = true
-    @State var onboardingFinished = UserDefaults.standard.bool(forKey: "onboardingFinished")
+    @State var onboardingFinished = true //= UserDefaults.standard.bool(forKey: "onboardingFinished")
    
     var body: some View {
        
