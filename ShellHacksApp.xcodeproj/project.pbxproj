@@ -117,6 +117,8 @@
 		E1044C1526FF449600BACB89 /* Walkingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0A26FF449600BACB89 /* Walkingv2.dae */; };
 		E1044C1626FF449600BACB89 /* Pointingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0B26FF449600BACB89 /* Pointingv2.dae */; };
 		E1044C1726FF449600BACB89 /* Pointingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0B26FF449600BACB89 /* Pointingv2.dae */; };
+		E15FCB9526FF96EB003BA5A2 /* EditQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCB9426FF96EB003BA5A2 /* EditQuizView.swift */; };
+		E15FCB9626FF96EB003BA5A2 /* EditQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCB9426FF96EB003BA5A2 /* EditQuizView.swift */; };
 		E1E84ACE26FF643E008CCD6C /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */; };
 		E1E84ACF26FF643E008CCD6C /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */; };
 /* End PBXBuildFile section */
@@ -181,6 +183,7 @@
 		E1044C0926FF449500BACB89 /* Sittingv2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Sittingv2.dae; sourceTree = "<group>"; };
 		E1044C0A26FF449600BACB89 /* Walkingv2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Walkingv2.dae; sourceTree = "<group>"; };
 		E1044C0B26FF449600BACB89 /* Pointingv2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Pointingv2.dae; sourceTree = "<group>"; };
+		E15FCB9426FF96EB003BA5A2 /* EditQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditQuizView.swift; sourceTree = "<group>"; };
 		E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -345,6 +348,7 @@
 				E1044BE426FEEF1F00BACB89 /* QuizView.swift */,
 				E1044BE726FEEF5200BACB89 /* QuestionsView.swift */,
 				E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */,
+				E15FCB9426FF96EB003BA5A2 /* EditQuizView.swift */,
 				E1044BEB26FEFE9900BACB89 /* ConfettiView.swift */,
 			);
 			path = Quiz;
@@ -549,6 +553,7 @@
 				E1044BEC26FEFE9900BACB89 /* ConfettiView.swift in Sources */,
 				E1044BD126FEE12700BACB89 /* ButtonData.swift in Sources */,
 				E1044BCD26FED94300BACB89 /* Onboarding.swift in Sources */,
+				E15FCB9526FF96EB003BA5A2 /* EditQuizView.swift in Sources */,
 				E103876926FF5DD50072760B /* CardView.swift in Sources */,
 				E1044B6526FECDC600BACB89 /* ContentView.swift in Sources */,
 				E1044B6326FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */,
@@ -583,6 +588,7 @@
 				E1044BED26FEFE9900BACB89 /* ConfettiView.swift in Sources */,
 				E1044BD226FEE12700BACB89 /* ButtonData.swift in Sources */,
 				E1044BCE26FED94300BACB89 /* Onboarding.swift in Sources */,
+				E15FCB9626FF96EB003BA5A2 /* EditQuizView.swift in Sources */,
 				E103876A26FF5DD50072760B /* CardView.swift in Sources */,
 				E1044B6626FECDC600BACB89 /* ContentView.swift in Sources */,
 				E1044B6426FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */,

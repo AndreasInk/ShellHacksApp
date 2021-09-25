@@ -10,7 +10,11 @@ import Combine
 import SFSafeSymbols
 
 class QuizManager: ObservableObject {
+    @Published var addTag = false
+    @Published var showSFSymbols = false
     @Published var queued = false
+    @Published var editQuiz = false
+    @Published var addQuiz = false
     @Published var quiz = Quiz(id: "", questions: [Question(id: UUID().uuidString, questionStr: "Hello", a: "World", b: "World2", c: "World3", correct: "World", picked: "")], tag: "Yes", image: SFSymbol.sleep.rawValue)
     
     @Published var takingQuiz: Bool = true

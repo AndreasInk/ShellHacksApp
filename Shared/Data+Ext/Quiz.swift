@@ -19,6 +19,7 @@ struct Quiz: Codable {
     var questions: [Question]
     var tag: String
     var image: SFSymbol.RawValue
+    var accuracy: Double?
 }
 
 struct Question: Codable {

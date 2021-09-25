@@ -30,8 +30,9 @@ struct ChoiceView: View {
     var body: some View {
         
         Button(action: {
+            question.picked = choice
             if quizManager.quiz.questions.indices.contains(quizManager.currentQuestion + 1) {
-               question.picked = choice
+                quizManager.currentQuestion += 1
             } else {
                 quizManager.takingQuiz = true
             }
