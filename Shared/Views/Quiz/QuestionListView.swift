@@ -13,11 +13,12 @@ struct QuestionsListView: View {
     @StateObject var quizManager: QuizManager
       var body: some View {
           NavigationView {
-          ZStack {
+        
           List {
-          ScrollView {
+         
               VStack(alignment: .leading) {
                   ForEach(Array(quizManager.quiz.questions.enumerated()), id: \.offset) { questionIndex, question in
+                      ZStack {
                       NavigationLink(destination:  QuestionsView(quizManager: quizManager, question: $quizManager.quiz.questions[quizManager.currentQuestion])) {
                           HStack {
                           VStack {
@@ -50,26 +51,31 @@ struct QuestionsListView: View {
                                   .frame(width: 25, height: 25)
                                   .foregroundColor(!question.picked.isEmpty ? question.correct == question.picked ? Color(.green).opacity(0.6) : Color(.red).opacity(0.6) : Color.Primary.opacity(0.2))
                           }
+                          
                       }
-                      Button(action: {
-                          quizManager.currentQuestion = questionIndex
-                         
-                      }) {
-                         
-                  }
-                     
-                  }
+                    
+                      } .swipeActions(edge: .trailing) {
+                          Button(role: .none){
+                                                      
+                                                  } label: {
+                                                      Label("Trash", systemImage: "trash.circle")
+                                                  }
+                                              }
+                  } .onDelete(perform: deleteItems)
                 Spacer()
-              }
-              
-
-          }
-              
-          }
+                  }
+          
+          
           .padding()
               .background(Color.Card)
               .edgesIgnoringSafeArea(.all)
       }
+         
+         
+          
           }
   }
+    func deleteItems(at offsets: IndexSet) {
+        quizManager.quiz.questions.remove(atOffsets: offsets)
+    }
 }

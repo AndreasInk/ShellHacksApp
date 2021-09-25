@@ -79,27 +79,19 @@ struct OnboardingDetailsView: View {
         GeometryReader { geo in
             
             ZStack {
+                ScrollView {
                 VStack {
-                LinearGradient.Primary
+                LinearGradient.Dark
                         .ignoresSafeArea()
                         .frame(height: geo.size.height/1.8)
                        
-                    Spacer()
-                }
-                //ScrollView {
-           
-           
-            VStack {
-                Spacer(minLength: geo.size.height/4.5)
                 
-                onboarding.image
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: geo.size.height/4, height: geo.size.height/4)
-                   // .clipShape(Circle())
-                    .padding()
+              
+                
+                
+                
                     
-                Spacer()
+               
                     
                
                     
@@ -109,6 +101,7 @@ struct OnboardingDetailsView: View {
                     .font(.custom("Poppins-Bold", size: 24, relativeTo: .headline))
                     .multilineTextAlignment(.trailing)
                     .padding()
+                    .padding(.bottom)
                         }
                             HStack {
                                 Spacer(minLength: geo.size.width/3)
@@ -121,11 +114,22 @@ struct OnboardingDetailsView: View {
                             
                             } .padding(.leading)
                 
-                Spacer(minLength: geo.size.height/2)
+                        .padding(.bottom, geo.size.height/1.3)
             }
+                VStack {
+                   
+                onboarding.image
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: geo.size.height/3, height: geo.size.height/3)
+                   // .clipShape(Circle())
+                    .padding()
+                    Spacer(minLength: geo.size.height/1.8)
+                } .padding(.top, geo.size.height/4)
          
           //  }
     }
+            }
         }
     }
 }

@@ -13,6 +13,7 @@ extension Color {
     static let Dark = Color("Dark")
     static let Light = Color("Light")
     static let Card = Color("Card")
+    static let Black = Color("Black")
 }
 
 extension LinearGradient: Equatable {
@@ -23,6 +24,7 @@ extension LinearGradient: Equatable {
     static let Primary = LinearGradient(colors: [.Secondary, .Primary], startPoint: .topLeading, endPoint: .bottom)
     static let Secondary = LinearGradient(colors: [.Primary, .Secondary], startPoint: .topLeading, endPoint: .bottom)
     static let Light = LinearGradient(colors: [.Light, .Light], startPoint: .topLeading, endPoint: .bottom)
+    static let Dark = LinearGradient(colors: [.Black, .Black], startPoint: .topLeading, endPoint: .bottom)
 }
 
 extension Array where Element:Equatable {

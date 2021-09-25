@@ -19,6 +19,7 @@ struct ContentView: View {
                 OnboardingView(onboardingFinished: $onboardingFinished)
                 .transition(.opacity)
             } else {
+                
                 //HomeView()
                 QuizView(quizManager: quizManager)
             }
@@ -34,6 +35,7 @@ struct ContentView: View {
              
                 }}
         }
+      
     }
 }
 
