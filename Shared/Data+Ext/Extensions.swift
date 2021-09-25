@@ -12,6 +12,7 @@ extension Color {
     static let Secondary = Color("Secondary")
     static let Dark = Color("Dark")
     static let Light = Color("Light")
+    static let Card = Color("Card")
 }
 
 extension LinearGradient: Equatable {

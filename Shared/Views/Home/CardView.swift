@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct CardView: View {
+    @ObservedObject var userData: LoginManager
+   
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            RoundedRectangle(cornerRadius: 20)
+                .foregroundColor(.Card)
+            HStack {
+                Text("")
+                    .font(.custom("Poppins-Bold", size: 100, relativeTo: .headline))
+                CircularProgressView()
+            }
+        }
     }
 }
 
-struct CardView_Previews: PreviewProvider {
-    static var previews: some View {
-        CardView()
-    }
-}

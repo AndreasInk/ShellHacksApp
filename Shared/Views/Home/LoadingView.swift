@@ -35,7 +35,7 @@ struct LoadingView: View {
                 .padding()
             }
             if animate2 {
-            Text("Remembear")
+            Text("RememBear")
                 .foregroundColor(.white)
                 .font(.custom("Poppins-Bold", size: 36, relativeTo: .headline))
                 .transition(.opacity)

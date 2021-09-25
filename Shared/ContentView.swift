@@ -9,9 +9,9 @@ import SwiftUI
 import SFSafeSymbols
 
 struct ContentView: View {
-    @State var loading = true
+    @State var loading = false
     @State var onboardingFinished = true //= UserDefaults.standard.bool(forKey: "onboardingFinished")
-   
+   @StateObject var quizManager = QuizManager()
     var body: some View {
        
         ZStack {
@@ -20,7 +20,7 @@ struct ContentView: View {
                 .transition(.opacity)
             } else {
                 //HomeView()
-                QuizView()
+                QuizView(quizManager: quizManager)
             }
         
         if loading {

@@ -117,6 +117,8 @@
 		E1044C1526FF449600BACB89 /* Walkingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0A26FF449600BACB89 /* Walkingv2.dae */; };
 		E1044C1626FF449600BACB89 /* Pointingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0B26FF449600BACB89 /* Pointingv2.dae */; };
 		E1044C1726FF449600BACB89 /* Pointingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0B26FF449600BACB89 /* Pointingv2.dae */; };
+		E1E84ACE26FF643E008CCD6C /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */; };
+		E1E84ACF26FF643E008CCD6C /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -179,6 +181,7 @@
 		E1044C0926FF449500BACB89 /* Sittingv2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Sittingv2.dae; sourceTree = "<group>"; };
 		E1044C0A26FF449600BACB89 /* Walkingv2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Walkingv2.dae; sourceTree = "<group>"; };
 		E1044C0B26FF449600BACB89 /* Pointingv2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Pointingv2.dae; sourceTree = "<group>"; };
+		E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +344,7 @@
 			children = (
 				E1044BE426FEEF1F00BACB89 /* QuizView.swift */,
 				E1044BE726FEEF5200BACB89 /* QuestionsView.swift */,
+				E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */,
 				E1044BEB26FEFE9900BACB89 /* ConfettiView.swift */,
 			);
 			path = Quiz;
@@ -534,6 +538,7 @@
 				E1044C0426FF422100BACB89 /* AnimationData.swift in Sources */,
 				E1044B8826FED2AC00BACB89 /* CurvedTextFieldStyle.swift in Sources */,
 				E1044B8026FED19B00BACB89 /* LoginView.swift in Sources */,
+				E1E84ACE26FF643E008CCD6C /* QuestionListView.swift in Sources */,
 				E1044BE826FEEF5200BACB89 /* QuestionsView.swift in Sources */,
 				E1044B7226FECE2000BACB89 /* HomeView.swift in Sources */,
 				E103876626FF59BB0072760B /* MLManager.swift in Sources */,
@@ -567,6 +572,7 @@
 				E1044C0526FF422100BACB89 /* AnimationData.swift in Sources */,
 				E1044B8926FED2AC00BACB89 /* CurvedTextFieldStyle.swift in Sources */,
 				E1044B8126FED19B00BACB89 /* LoginView.swift in Sources */,
+				E1E84ACF26FF643E008CCD6C /* QuestionListView.swift in Sources */,
 				E1044BE926FEEF5200BACB89 /* QuestionsView.swift in Sources */,
 				E1044B7326FECE2000BACB89 /* HomeView.swift in Sources */,
 				E103876726FF59BB0072760B /* MLManager.swift in Sources */,
