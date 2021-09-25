@@ -82,6 +82,10 @@
 		E1044BDF26FEE49C00BACB89 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BDD26FEE49C00BACB89 /* QuizManager.swift */; };
 		E1044BE126FEE52400BACB89 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BE026FEE52400BACB89 /* Quiz.swift */; };
 		E1044BE226FEE52400BACB89 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BE026FEE52400BACB89 /* Quiz.swift */; };
+		E1044BE526FEEF2000BACB89 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BE426FEEF1F00BACB89 /* QuizView.swift */; };
+		E1044BE626FEEF2000BACB89 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BE426FEEF1F00BACB89 /* QuizView.swift */; };
+		E1044BE826FEEF5200BACB89 /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BE726FEEF5200BACB89 /* QuestionsView.swift */; };
+		E1044BE926FEEF5200BACB89 /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BE726FEEF5200BACB89 /* QuestionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +131,8 @@
 		E1044BDA26FEE49100BACB89 /* LeaderboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardManager.swift; sourceTree = "<group>"; };
 		E1044BDD26FEE49C00BACB89 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 		E1044BE026FEE52400BACB89 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		E1044BE426FEEF1F00BACB89 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		E1044BE726FEEF5200BACB89 /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,7 @@
 			children = (
 				E1044B8626FED28D00BACB89 /* Styles */,
 				E1044BCF26FEDF8500BACB89 /* Onboarding */,
+				E1044BE326FEEF1200BACB89 /* Quiz */,
 				E1044B8226FED1A000BACB89 /* Home */,
 			);
 			path = Views;
@@ -274,6 +281,15 @@
 				E1044BDA26FEE49100BACB89 /* LeaderboardManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		E1044BE326FEEF1200BACB89 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				E1044BE426FEEF1F00BACB89 /* QuizView.swift */,
+				E1044BE726FEEF5200BACB89 /* QuestionsView.swift */,
+			);
+			path = Quiz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,6 +437,7 @@
 				E1044BDE26FEE49C00BACB89 /* QuizManager.swift in Sources */,
 				E1044B8826FED2AC00BACB89 /* CurvedTextFieldStyle.swift in Sources */,
 				E1044B8026FED19B00BACB89 /* LoginView.swift in Sources */,
+				E1044BE826FEEF5200BACB89 /* QuestionsView.swift in Sources */,
 				E1044B7226FECE2000BACB89 /* HomeView.swift in Sources */,
 				E1044BCA26FED93900BACB89 /* OnboardingView.swift in Sources */,
 				E1044B8B26FED65E00BACB89 /* CurvedGradientButtonStyle.swift in Sources */,
@@ -429,6 +446,7 @@
 				E1044BCD26FED94300BACB89 /* Onboarding.swift in Sources */,
 				E1044B6526FECDC600BACB89 /* ContentView.swift in Sources */,
 				E1044B6326FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */,
+				E1044BE526FEEF2000BACB89 /* QuizView.swift in Sources */,
 				E1044B7A26FECF7900BACB89 /* LoadingView.swift in Sources */,
 				E1044BDB26FEE49100BACB89 /* LeaderboardManager.swift in Sources */,
 				E1044BE126FEE52400BACB89 /* Quiz.swift in Sources */,
@@ -445,6 +463,7 @@
 				E1044BDF26FEE49C00BACB89 /* QuizManager.swift in Sources */,
 				E1044B8926FED2AC00BACB89 /* CurvedTextFieldStyle.swift in Sources */,
 				E1044B8126FED19B00BACB89 /* LoginView.swift in Sources */,
+				E1044BE926FEEF5200BACB89 /* QuestionsView.swift in Sources */,
 				E1044B7326FECE2000BACB89 /* HomeView.swift in Sources */,
 				E1044BCB26FED93900BACB89 /* OnboardingView.swift in Sources */,
 				E1044B8C26FED65E00BACB89 /* CurvedGradientButtonStyle.swift in Sources */,
@@ -453,6 +472,7 @@
 				E1044BCE26FED94300BACB89 /* Onboarding.swift in Sources */,
 				E1044B6626FECDC600BACB89 /* ContentView.swift in Sources */,
 				E1044B6426FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */,
+				E1044BE626FEEF2000BACB89 /* QuizView.swift in Sources */,
 				E1044B7B26FECF7900BACB89 /* LoadingView.swift in Sources */,
 				E1044BDC26FEE49100BACB89 /* LeaderboardManager.swift in Sources */,
 				E1044BE226FEE52400BACB89 /* Quiz.swift in Sources */,

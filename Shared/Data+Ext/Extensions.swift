@@ -13,6 +13,7 @@ extension Color {
     static let Dark = Color("Dark")
     static let Light = Color("Light")
 }
+
 extension LinearGradient: Equatable {
     public static func == (lhs: LinearGradient, rhs: LinearGradient) -> Bool {
         return false
@@ -43,5 +44,17 @@ extension Date {
     
     func get(_ component: Calendar.Component, calendar: Calendar = Calendar.current) -> Int {
         return calendar.component(component, from: self)
+    }
+}
+
+extension UserDefaults {
+    func codable<T: Decodable>(forKey key: String) -> T? {
+        guard let data = data(forKey: key) else { return nil }
+        return try? JSONDecoder().decode(T.self, from: data)
+    }
+    
+    func setEncode<T: Encodable>(_ value: T, forKey defaultName: String) {
+        guard let data = try? JSONEncoder().encode(value) else { return }
+        set(data, forKey: defaultName)
     }
 }

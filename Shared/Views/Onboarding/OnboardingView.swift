@@ -13,7 +13,9 @@ struct OnboardingView: View {
     @Binding var onboardingFinished: Bool
     @State var currentSlide = 0
     var body: some View {
+       
         ZStack {
+            
         TabView(selection: $currentSlide) {
             ForEach(onboarding, id: \.id) { onboarding in
             if onboarding.id == "Login" {
@@ -35,8 +37,10 @@ struct OnboardingView: View {
             }   .tag(onboarding.tag)
             }
         }
+        
         } .tabViewStyle(PageTabViewStyle())
     }
+        
     }
 }
 
@@ -50,6 +54,7 @@ struct OnboardingDetailsView: View {
             VStack {
             LinearGradient.Primary
                     .frame(height: geo.size.height/1.8)
+                    .ignoresSafeArea(.all, edges: .top)
                 Spacer()
             }
             VStack {
