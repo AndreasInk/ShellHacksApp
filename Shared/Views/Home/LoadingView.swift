@@ -31,7 +31,8 @@ struct LoadingView: View {
             Image(systemSymbol: .sleep)
                 .foregroundColor(.white)
                 .font(.custom("Poppins-Bold", size: 100, relativeTo: .headline))
-                .transition(.opacity)
+                .transition(.opacity.combined(with: .scale(scale: 0.2)))
+                
                 .padding()
             }
             if animate2 {

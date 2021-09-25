@@ -29,7 +29,7 @@ struct SceneView: UIViewRepresentable {
 //        let player = SCNAudioPlayer(source: tempAudioSource)
        
         // Instantiate the SCNView and setup the scene
-        view.scene = SCNScene(named: "Wavingv2.scn")!
+        view.scene = SCNScene(named: "Idlev2.scn")!
         //view.scene = SCNScene(named: "trophy.dae")!
         ///view.scene?.rootNode.addAudioPlayer(player)
         view.scene?.rootNode.scale = SCNVector3(x: 0.8, y: 0.8, z: 0.8)

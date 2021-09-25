@@ -28,10 +28,14 @@ struct EditQuizView: View {
             ForEach(Array($quizManager.quiz.questions.enumerated()), id: \.offset) { questionIndex, $question in
                 Button(action: {
                     if !openQuestions.contains(questionIndex) {
+                        withAnimation(.spring()) {
                         openQuestions.append(questionIndex)
+                        }
                     } else {
                         if let index = openQuestions.firstIndex(of: questionIndex) {
+                            withAnimation(.spring()) {
                         openQuestions.remove(at: index)
+                            }
                         }
                     }
                 }) {
@@ -40,6 +44,8 @@ struct EditQuizView: View {
                 Text("\(questionIndex + 1)) Question")
                     .font(.custom("Poppins-Bold", size: 16, relativeTo: .headline))
                     Spacer()
+                    Image(systemSymbol: openQuestions.contains(questionIndex) ? .chevronDown : .chevronRight)
+                        .font(.custom("Poppins-Bold", size: 16, relativeTo: .headline))
                 }
                 .onAppear() {
                     proxy.scrollTo(toggledIndex)
@@ -80,8 +86,9 @@ struct EditQuizView: View {
                     .font(.custom("Poppins", size: 16, relativeTo: .headline))
                 }
                 Divider()
+                    .padding(.vertical)
             } .textFieldStyle(CurvedTextFieldStyle())
-               
+            Spacer()
            
         Button(action: {
             

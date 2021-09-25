@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    @State var onboarding = [Onboarding(id: UUID().uuidString, tag: 0, title: "Welcome to RememBear.", text: "It's a long journey you've set out on to meet your educational goals, and we want to help you retain what you've learned.", image: Image("person")), Onboarding(id: UUID().uuidString, tag: 2, title: "Acquisition of Information", text: "The acquisition phase relies heavily of the collection of data. In our case, we encourage you to record lectures, scan textbook pages and notes into the app, so that RememBear can turn this information into learning material for you.", image: Image("logo")),Onboarding(id: UUID().uuidString, tag: 2, title: "Learning the Material", text: "Learning the material with RememBear allows you to work with personalized questions created from the material that you uploaded. No more flashcards, and no more pretending like you didn't write these questions. We wanted to replicate the \"unknown\" factor of tests.", image: Image("logo")), Onboarding(id: UUID().uuidString, tag: 2, title: "Long-Term Retention", text: "Retention is probably the hardest but most crucial piece of the process. Research has shown that listening to the same audio while learning information as when attempting to recall it, leads to a higher rate of retention. We want to help you leverage this fact by offering a wide range of audio to listen to while studying, and for you to \"learn as you sleep.\"", image: Image("logo")),  Onboarding(id: "Login", tag: 1, title: "Hello World", text: "mskdjkjskmdksdskjdksddsdslskdlds", image: Image("data") )]
+    @State var onboarding = [Onboarding(id: UUID().uuidString, tag: 0, title: "Welcome to RememBear.", text: "It's a long journey you've set out on to meet your educational goals, and we want to help you retain what you've learned.", image: Image("person")), Onboarding(id: UUID().uuidString, tag: 2, title: "Acquisition of Information", text: "The acquisition phase relies heavily of the collection of data. In our case, we encourage you to record lectures, scan textbook pages and notes into the app, so that RememBear can turn this information into learning material for you.", image: Image("mac")),Onboarding(id: UUID().uuidString, tag: 2, title: "Learning the Material", text: "Learning the material with RememBear allows you to work with personalized questions created from the material that you uploaded. No more flashcards, and no more pretending like you didn't write these questions. We wanted to replicate the \"unknown\" factor of tests.", image: Image("mac")), Onboarding(id: UUID().uuidString, tag: 2, title: "Long-Term Retention", text: "Retention is probably the hardest but most crucial piece of the process. Research has shown that listening to the same audio while learning information as when attempting to recall it, leads to a higher rate of retention. We want to help you leverage this fact by offering a wide range of audio to listen to while studying, and for you to \"learn as you sleep.\"", image: Image("looking")),  Onboarding(id: "Login", tag: 1, title: "Hello World", text: "mskdjkjskmdksdskjdksddsdslskdlds", image: Image("data") )]
     
     @Binding var onboardingFinished: Bool
     @State var currentSlide = 0
@@ -32,6 +32,9 @@ struct OnboardingView: View {
         }
         
         } .tabViewStyle(PageTabViewStyle())
+                .onAppear() {
+                    animationType = .Waving
+                }
             if currentSlide != onboarding.count - 1 {
             VStack {
                 Spacer(minLength: geo.size.height/3)
@@ -57,7 +60,8 @@ struct OnboardingView: View {
                     Text(self.onboarding.indices.contains(currentSlide + 1) ? "Next" : "Explore")
                         
                     
-                } .buttonStyle(CurvedBorderButtonStyle(button: ButtonData(id: UUID().uuidString, type: .Outline, gradient: .Primary)))
+                } //.buttonStyle(CurvedBorderButtonStyle(button: ButtonData(id: UUID().uuidString, type: .Outline, gradient: .Primary)))
+                            .buttonStyle(PopButtonStyle())
                     .padding(.bottom)
                     }
             }
@@ -81,14 +85,18 @@ struct OnboardingDetailsView: View {
             ZStack {
                 ScrollView {
                 VStack {
-                LinearGradient.Dark
-                        .ignoresSafeArea()
-                        .frame(height: geo.size.height/1.8)
-                       
+//                LinearGradient.Dark
+//                        .frame(height: geo.size.height/2.5)
+//                        .ignoresSafeArea()
                 
               
                 
-                
+                    onboarding.image
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 220, height: 220)
+                       // .clipShape(Circle())
+                        .padding()
                 
                     
                
@@ -116,19 +124,15 @@ struct OnboardingDetailsView: View {
                 
                         .padding(.bottom, geo.size.height/1.3)
             }
-                VStack {
-                   
-                onboarding.image
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: geo.size.height/3, height: geo.size.height/3)
-                   // .clipShape(Circle())
-                    .padding()
-                    Spacer(minLength: geo.size.height/1.8)
-                } .padding(.top, geo.size.height/4)
+               
          
           //  }
     }
+//                VStack {
+//
+//
+//                    Spacer()
+//                }
             }
         }
     }

@@ -119,6 +119,12 @@
 		E1044C1726FF449600BACB89 /* Pointingv2.dae in Resources */ = {isa = PBXBuildFile; fileRef = E1044C0B26FF449600BACB89 /* Pointingv2.dae */; };
 		E15FCB9526FF96EB003BA5A2 /* EditQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCB9426FF96EB003BA5A2 /* EditQuizView.swift */; };
 		E15FCB9626FF96EB003BA5A2 /* EditQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCB9426FF96EB003BA5A2 /* EditQuizView.swift */; };
+		E15FCB9826FFAD0B003BA5A2 /* Box3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCB9726FFAD0B003BA5A2 /* Box3DView.swift */; };
+		E15FCB9926FFAD0B003BA5A2 /* Box3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCB9726FFAD0B003BA5A2 /* Box3DView.swift */; };
+		E15FCB9B26FFAD38003BA5A2 /* PopButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCB9A26FFAD38003BA5A2 /* PopButtonStyle.swift */; };
+		E15FCB9C26FFAD38003BA5A2 /* PopButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCB9A26FFAD38003BA5A2 /* PopButtonStyle.swift */; };
+		E15FCBA126FFB1EF003BA5A2 /* Idlev2.scn in Resources */ = {isa = PBXBuildFile; fileRef = E15FCBA026FFB1EF003BA5A2 /* Idlev2.scn */; };
+		E15FCBA226FFB1EF003BA5A2 /* Idlev2.scn in Resources */ = {isa = PBXBuildFile; fileRef = E15FCBA026FFB1EF003BA5A2 /* Idlev2.scn */; };
 		E1E84ACE26FF643E008CCD6C /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */; };
 		E1E84ACF26FF643E008CCD6C /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */; };
 /* End PBXBuildFile section */
@@ -184,6 +190,9 @@
 		E1044C0A26FF449600BACB89 /* Walkingv2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Walkingv2.dae; sourceTree = "<group>"; };
 		E1044C0B26FF449600BACB89 /* Pointingv2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Pointingv2.dae; sourceTree = "<group>"; };
 		E15FCB9426FF96EB003BA5A2 /* EditQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditQuizView.swift; sourceTree = "<group>"; };
+		E15FCB9726FFAD0B003BA5A2 /* Box3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box3DView.swift; sourceTree = "<group>"; };
+		E15FCB9A26FFAD38003BA5A2 /* PopButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopButtonStyle.swift; sourceTree = "<group>"; };
+		E15FCBA026FFB1EF003BA5A2 /* Idlev2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Idlev2.scn; sourceTree = "<group>"; };
 		E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -290,6 +299,7 @@
 			children = (
 				E1044B8726FED2AC00BACB89 /* CurvedTextFieldStyle.swift */,
 				E1044B8A26FED65E00BACB89 /* CurvedGradientButtonStyle.swift */,
+				E15FCB9A26FFAD38003BA5A2 /* PopButtonStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -358,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				E1044C0026FF41EF00BACB89 /* SceneView.swift */,
+				E15FCB9726FFAD0B003BA5A2 /* Box3DView.swift */,
 				E1044C1926FF44A200BACB89 /* Models */,
 			);
 			path = 3D;
@@ -366,6 +377,7 @@
 		E1044C1926FF44A200BACB89 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E15FCBA026FFB1EF003BA5A2 /* Idlev2.scn */,
 				E103876226FF51CE0072760B /* Climbingv2.dae */,
 				E1044C0626FF449300BACB89 /* Cheeringv2.dae */,
 				E1044C0B26FF449600BACB89 /* Pointingv2.dae */,
@@ -480,6 +492,7 @@
 				E1044BC526FED8B300BACB89 /* Poppins-MediumItalic.ttf in Resources */,
 				E1044BA326FED8B300BACB89 /* Poppins-ThinItalic.ttf in Resources */,
 				E1044BBB26FED8B300BACB89 /* Poppins-Bold.ttf in Resources */,
+				E15FCBA126FFB1EF003BA5A2 /* Idlev2.scn in Resources */,
 				E103876326FF51CE0072760B /* Climbingv2.dae in Resources */,
 				E1044C1626FF449600BACB89 /* Pointingv2.dae in Resources */,
 				E1044BB526FED8B300BACB89 /* OFL.txt in Resources */,
@@ -515,6 +528,7 @@
 				E1044BC626FED8B300BACB89 /* Poppins-MediumItalic.ttf in Resources */,
 				E1044BA426FED8B300BACB89 /* Poppins-ThinItalic.ttf in Resources */,
 				E1044BBC26FED8B300BACB89 /* Poppins-Bold.ttf in Resources */,
+				E15FCBA226FFB1EF003BA5A2 /* Idlev2.scn in Resources */,
 				E103876426FF51CE0072760B /* Climbingv2.dae in Resources */,
 				E1044C1726FF449600BACB89 /* Pointingv2.dae in Resources */,
 				E1044BB626FED8B300BACB89 /* OFL.txt in Resources */,
@@ -553,6 +567,7 @@
 				E1044BEC26FEFE9900BACB89 /* ConfettiView.swift in Sources */,
 				E1044BD126FEE12700BACB89 /* ButtonData.swift in Sources */,
 				E1044BCD26FED94300BACB89 /* Onboarding.swift in Sources */,
+				E15FCB9B26FFAD38003BA5A2 /* PopButtonStyle.swift in Sources */,
 				E15FCB9526FF96EB003BA5A2 /* EditQuizView.swift in Sources */,
 				E103876926FF5DD50072760B /* CardView.swift in Sources */,
 				E1044B6526FECDC600BACB89 /* ContentView.swift in Sources */,
@@ -563,6 +578,7 @@
 				E1044BDB26FEE49100BACB89 /* LeaderboardManager.swift in Sources */,
 				E1044BE126FEE52400BACB89 /* Quiz.swift in Sources */,
 				E1044B7526FECEB400BACB89 /* Extensions.swift in Sources */,
+				E15FCB9826FFAD0B003BA5A2 /* Box3DView.swift in Sources */,
 				E1044B8426FED22F00BACB89 /* User.swift in Sources */,
 				E103876C26FF5DE40072760B /* CircularProgressView.swift in Sources */,
 				E1044BD826FEE48700BACB89 /* HealthManager.swift in Sources */,
@@ -588,6 +604,7 @@
 				E1044BED26FEFE9900BACB89 /* ConfettiView.swift in Sources */,
 				E1044BD226FEE12700BACB89 /* ButtonData.swift in Sources */,
 				E1044BCE26FED94300BACB89 /* Onboarding.swift in Sources */,
+				E15FCB9C26FFAD38003BA5A2 /* PopButtonStyle.swift in Sources */,
 				E15FCB9626FF96EB003BA5A2 /* EditQuizView.swift in Sources */,
 				E103876A26FF5DD50072760B /* CardView.swift in Sources */,
 				E1044B6626FECDC600BACB89 /* ContentView.swift in Sources */,
@@ -598,6 +615,7 @@
 				E1044BDC26FEE49100BACB89 /* LeaderboardManager.swift in Sources */,
 				E1044BE226FEE52400BACB89 /* Quiz.swift in Sources */,
 				E1044B7626FECEB400BACB89 /* Extensions.swift in Sources */,
+				E15FCB9926FFAD0B003BA5A2 /* Box3DView.swift in Sources */,
 				E1044B8526FED22F00BACB89 /* User.swift in Sources */,
 				E103876D26FF5DE40072760B /* CircularProgressView.swift in Sources */,
 				E1044BD926FEE48700BACB89 /* HealthManager.swift in Sources */,

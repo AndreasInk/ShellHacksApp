@@ -16,6 +16,7 @@ struct QuestionsListView: View {
     @State var newTag = ""
     @State  var allTags = UserDefaults.standard.stringArray(forKey: "allTags") ?? ["None"]
     @State var newQuiz = Quiz(id: UUID().uuidString, questions: [Question](), tag: "", image: SFSymbol.sleep.rawValue)
+    @StateObject var ML = MLManager()
       var body: some View {
           NavigationView {
         
@@ -24,7 +25,7 @@ struct QuestionsListView: View {
              
                   ForEach(Array(quizManager.quiz.questions.enumerated()), id: \.offset) { questionIndex, question in
                       VStack {
-                      NavigationLink(destination:  QuestionsView(quizManager: quizManager, question: $quizManager.quiz.questions[quizManager.currentQuestion])) {
+                      NavigationLink(destination:  QuestionsView(quizManager: quizManager, question: $quizManager.quiz.questions[questionIndex])) {
                           HStack {
                           VStack {
                               
@@ -125,7 +126,13 @@ struct QuestionsListView: View {
               quizManager.addQuiz.toggle()
           }) {
               Image(systemSymbol: .plus)
-          })
+          }, trailing:
+              Button(action: {
+              quizManager.quiz = ML.tagQuestions(quiz: quizManager.quiz)
+          }) {
+              Image(systemSymbol: .tag)
+          }
+          )
                      
                 Spacer()
                   }
