@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1044B6326FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B5326FECDC500BACB89 /* ShellHacksAppApp.swift */; };
+		E1044B6426FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B5326FECDC500BACB89 /* ShellHacksAppApp.swift */; };
+		E1044B6526FECDC600BACB89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B5426FECDC500BACB89 /* ContentView.swift */; };
+		E1044B6626FECDC600BACB89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B5426FECDC500BACB89 /* ContentView.swift */; };
+		E1044B6726FECDC600BACB89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1044B5526FECDC600BACB89 /* Assets.xcassets */; };
+		E1044B6826FECDC600BACB89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1044B5526FECDC600BACB89 /* Assets.xcassets */; };
+		E1044B7226FECE2000BACB89 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B7126FECE2000BACB89 /* HomeView.swift */; };
+		E1044B7326FECE2000BACB89 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B7126FECE2000BACB89 /* HomeView.swift */; };
+		E1044B7526FECEB400BACB89 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B7426FECEB400BACB89 /* Extensions.swift */; };
+		E1044B7626FECEB400BACB89 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B7426FECEB400BACB89 /* Extensions.swift */; };
+		E1044B7A26FECF7900BACB89 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B7926FECF7900BACB89 /* LoadingView.swift */; };
+		E1044B7B26FECF7900BACB89 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B7926FECF7900BACB89 /* LoadingView.swift */; };
+		E1044B7E26FECFF500BACB89 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = E1044B7D26FECFF500BACB89 /* SFSafeSymbols */; };
+		E1044B8026FED19B00BACB89 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B7F26FED19B00BACB89 /* LoginView.swift */; };
+		E1044B8126FED19B00BACB89 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B7F26FED19B00BACB89 /* LoginView.swift */; };
+		E1044B8426FED22F00BACB89 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B8326FED22F00BACB89 /* User.swift */; };
+		E1044B8526FED22F00BACB89 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B8326FED22F00BACB89 /* User.swift */; };
+		E1044B8826FED2AC00BACB89 /* CurvedTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B8726FED2AC00BACB89 /* CurvedTextFieldStyle.swift */; };
+		E1044B8926FED2AC00BACB89 /* CurvedTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B8726FED2AC00BACB89 /* CurvedTextFieldStyle.swift */; };
+		E1044B8B26FED65E00BACB89 /* CurvedGradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B8A26FED65E00BACB89 /* CurvedGradientButtonStyle.swift */; };
+		E1044B8C26FED65E00BACB89 /* CurvedGradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044B8A26FED65E00BACB89 /* CurvedGradientButtonStyle.swift */; };
+		E1044BA126FED8B300BACB89 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B8E26FED8B300BACB89 /* Poppins-ExtraLight.ttf */; };
+		E1044BA226FED8B300BACB89 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B8E26FED8B300BACB89 /* Poppins-ExtraLight.ttf */; };
+		E1044BA326FED8B300BACB89 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B8F26FED8B300BACB89 /* Poppins-ThinItalic.ttf */; };
+		E1044BA426FED8B300BACB89 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B8F26FED8B300BACB89 /* Poppins-ThinItalic.ttf */; };
+		E1044BA526FED8B300BACB89 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9026FED8B300BACB89 /* Poppins-ExtraLightItalic.ttf */; };
+		E1044BA626FED8B300BACB89 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9026FED8B300BACB89 /* Poppins-ExtraLightItalic.ttf */; };
+		E1044BA726FED8B300BACB89 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9126FED8B300BACB89 /* Poppins-BoldItalic.ttf */; };
+		E1044BA826FED8B300BACB89 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9126FED8B300BACB89 /* Poppins-BoldItalic.ttf */; };
+		E1044BA926FED8B300BACB89 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9226FED8B300BACB89 /* Poppins-Light.ttf */; };
+		E1044BAA26FED8B300BACB89 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9226FED8B300BACB89 /* Poppins-Light.ttf */; };
+		E1044BAB26FED8B300BACB89 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9326FED8B300BACB89 /* Poppins-Medium.ttf */; };
+		E1044BAC26FED8B300BACB89 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9326FED8B300BACB89 /* Poppins-Medium.ttf */; };
+		E1044BAD26FED8B300BACB89 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9426FED8B300BACB89 /* Poppins-SemiBoldItalic.ttf */; };
+		E1044BAE26FED8B300BACB89 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9426FED8B300BACB89 /* Poppins-SemiBoldItalic.ttf */; };
+		E1044BAF26FED8B300BACB89 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9526FED8B300BACB89 /* Poppins-ExtraBoldItalic.ttf */; };
+		E1044BB026FED8B300BACB89 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9526FED8B300BACB89 /* Poppins-ExtraBoldItalic.ttf */; };
+		E1044BB126FED8B300BACB89 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9626FED8B300BACB89 /* Poppins-ExtraBold.ttf */; };
+		E1044BB226FED8B300BACB89 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9626FED8B300BACB89 /* Poppins-ExtraBold.ttf */; };
+		E1044BB326FED8B300BACB89 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9726FED8B300BACB89 /* Poppins-BlackItalic.ttf */; };
+		E1044BB426FED8B300BACB89 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9726FED8B300BACB89 /* Poppins-BlackItalic.ttf */; };
+		E1044BB526FED8B300BACB89 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9826FED8B300BACB89 /* OFL.txt */; };
+		E1044BB626FED8B300BACB89 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9826FED8B300BACB89 /* OFL.txt */; };
+		E1044BB726FED8B300BACB89 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9926FED8B300BACB89 /* Poppins-Regular.ttf */; };
+		E1044BB826FED8B300BACB89 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9926FED8B300BACB89 /* Poppins-Regular.ttf */; };
+		E1044BB926FED8B300BACB89 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9A26FED8B300BACB89 /* Poppins-LightItalic.ttf */; };
+		E1044BBA26FED8B300BACB89 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9A26FED8B300BACB89 /* Poppins-LightItalic.ttf */; };
+		E1044BBB26FED8B300BACB89 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9B26FED8B300BACB89 /* Poppins-Bold.ttf */; };
+		E1044BBC26FED8B300BACB89 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9B26FED8B300BACB89 /* Poppins-Bold.ttf */; };
+		E1044BBD26FED8B300BACB89 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9C26FED8B300BACB89 /* Poppins-Black.ttf */; };
+		E1044BBE26FED8B300BACB89 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9C26FED8B300BACB89 /* Poppins-Black.ttf */; };
+		E1044BBF26FED8B300BACB89 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9D26FED8B300BACB89 /* Poppins-Thin.ttf */; };
+		E1044BC026FED8B300BACB89 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9D26FED8B300BACB89 /* Poppins-Thin.ttf */; };
+		E1044BC126FED8B300BACB89 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9E26FED8B300BACB89 /* Poppins-SemiBold.ttf */; };
+		E1044BC226FED8B300BACB89 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9E26FED8B300BACB89 /* Poppins-SemiBold.ttf */; };
+		E1044BC326FED8B300BACB89 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9F26FED8B300BACB89 /* Poppins-Italic.ttf */; };
+		E1044BC426FED8B300BACB89 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044B9F26FED8B300BACB89 /* Poppins-Italic.ttf */; };
+		E1044BC526FED8B300BACB89 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044BA026FED8B300BACB89 /* Poppins-MediumItalic.ttf */; };
+		E1044BC626FED8B300BACB89 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1044BA026FED8B300BACB89 /* Poppins-MediumItalic.ttf */; };
+		E1044BCA26FED93900BACB89 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BC926FED93900BACB89 /* OnboardingView.swift */; };
+		E1044BCB26FED93900BACB89 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BC926FED93900BACB89 /* OnboardingView.swift */; };
+		E1044BCD26FED94300BACB89 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BCC26FED94300BACB89 /* Onboarding.swift */; };
+		E1044BCE26FED94300BACB89 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BCC26FED94300BACB89 /* Onboarding.swift */; };
+		E1044BD126FEE12700BACB89 /* ButtonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BD026FEE12700BACB89 /* ButtonData.swift */; };
+		E1044BD226FEE12700BACB89 /* ButtonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BD026FEE12700BACB89 /* ButtonData.swift */; };
+		E1044BD526FEE47C00BACB89 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BD426FEE47C00BACB89 /* LoginManager.swift */; };
+		E1044BD626FEE47C00BACB89 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BD426FEE47C00BACB89 /* LoginManager.swift */; };
+		E1044BD826FEE48700BACB89 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BD726FEE48700BACB89 /* HealthManager.swift */; };
+		E1044BD926FEE48700BACB89 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BD726FEE48700BACB89 /* HealthManager.swift */; };
+		E1044BDB26FEE49100BACB89 /* LeaderboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BDA26FEE49100BACB89 /* LeaderboardManager.swift */; };
+		E1044BDC26FEE49100BACB89 /* LeaderboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BDA26FEE49100BACB89 /* LeaderboardManager.swift */; };
+		E1044BDE26FEE49C00BACB89 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BDD26FEE49C00BACB89 /* QuizManager.swift */; };
+		E1044BDF26FEE49C00BACB89 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BDD26FEE49C00BACB89 /* QuizManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E1044B5326FECDC500BACB89 /* ShellHacksAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellHacksAppApp.swift; sourceTree = "<group>"; };
+		E1044B5426FECDC500BACB89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E1044B5526FECDC600BACB89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1044B5A26FECDC600BACB89 /* ShellHacksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShellHacksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1044B6026FECDC600BACB89 /* ShellHacksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShellHacksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1044B6226FECDC600BACB89 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		E1044B7126FECE2000BACB89 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E1044B7426FECEB400BACB89 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E1044B7926FECF7900BACB89 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		E1044B7F26FED19B00BACB89 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E1044B8326FED22F00BACB89 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E1044B8726FED2AC00BACB89 /* CurvedTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedTextFieldStyle.swift; sourceTree = "<group>"; };
+		E1044B8A26FED65E00BACB89 /* CurvedGradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedGradientButtonStyle.swift; sourceTree = "<group>"; };
+		E1044B8E26FED8B300BACB89 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		E1044B8F26FED8B300BACB89 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		E1044B9026FED8B300BACB89 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		E1044B9126FED8B300BACB89 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E1044B9226FED8B300BACB89 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		E1044B9326FED8B300BACB89 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		E1044B9426FED8B300BACB89 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		E1044B9526FED8B300BACB89 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		E1044B9626FED8B300BACB89 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		E1044B9726FED8B300BACB89 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		E1044B9826FED8B300BACB89 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		E1044B9926FED8B300BACB89 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		E1044B9A26FED8B300BACB89 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		E1044B9B26FED8B300BACB89 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		E1044B9C26FED8B300BACB89 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		E1044B9D26FED8B300BACB89 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		E1044B9E26FED8B300BACB89 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		E1044B9F26FED8B300BACB89 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		E1044BA026FED8B300BACB89 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E1044BC726FED8CC00BACB89 /* ShellHacksApp--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ShellHacksApp--iOS--Info.plist"; sourceTree = "<group>"; };
+		E1044BC826FED8CE00BACB89 /* ShellHacksApp--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ShellHacksApp--macOS--Info.plist"; sourceTree = "<group>"; };
+		E1044BC926FED93900BACB89 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		E1044BCC26FED94300BACB89 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		E1044BD026FEE12700BACB89 /* ButtonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonData.swift; sourceTree = "<group>"; };
+		E1044BD426FEE47C00BACB89 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		E1044BD726FEE48700BACB89 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		E1044BDA26FEE49100BACB89 /* LeaderboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardManager.swift; sourceTree = "<group>"; };
+		E1044BDD26FEE49C00BACB89 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1044B5726FECDC600BACB89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1044B7E26FECFF500BACB89 /* SFSafeSymbols in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1044B5D26FECDC600BACB89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1044B4D26FECDC500BACB89 = {
+			isa = PBXGroup;
+			children = (
+				E1044BC826FED8CE00BACB89 /* ShellHacksApp--macOS--Info.plist */,
+				E1044BC726FED8CC00BACB89 /* ShellHacksApp--iOS--Info.plist */,
+				E1044B5226FECDC500BACB89 /* Shared */,
+				E1044B6126FECDC600BACB89 /* macOS */,
+				E1044B5B26FECDC600BACB89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1044B5226FECDC500BACB89 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E1044B5326FECDC500BACB89 /* ShellHacksAppApp.swift */,
+				E1044B5426FECDC500BACB89 /* ContentView.swift */,
+				E1044B7826FECF4500BACB89 /* Data+Ext */,
+				E1044B7726FECF4000BACB89 /* Views */,
+				E1044B5526FECDC600BACB89 /* Assets.xcassets */,
+				E1044B8D26FED8B300BACB89 /* Poppins */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E1044B5B26FECDC600BACB89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1044B5A26FECDC600BACB89 /* ShellHacksApp.app */,
+				E1044B6026FECDC600BACB89 /* ShellHacksApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1044B6126FECDC600BACB89 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				E1044B6226FECDC600BACB89 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		E1044B7726FECF4000BACB89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1044B8626FED28D00BACB89 /* Styles */,
+				E1044BCF26FEDF8500BACB89 /* Onboarding */,
+				E1044B8226FED1A000BACB89 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1044B7826FECF4500BACB89 /* Data+Ext */ = {
+			isa = PBXGroup;
+			children = (
+				E1044BD326FEE45600BACB89 /* Managers */,
+				E1044B7426FECEB400BACB89 /* Extensions.swift */,
+				E1044B8326FED22F00BACB89 /* User.swift */,
+				E1044BCC26FED94300BACB89 /* Onboarding.swift */,
+				E1044BD026FEE12700BACB89 /* ButtonData.swift */,
+			);
+			path = "Data+Ext";
+			sourceTree = "<group>";
+		};
+		E1044B8226FED1A000BACB89 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E1044B7126FECE2000BACB89 /* HomeView.swift */,
+				E1044B7926FECF7900BACB89 /* LoadingView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E1044B8626FED28D00BACB89 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				E1044B8726FED2AC00BACB89 /* CurvedTextFieldStyle.swift */,
+				E1044B8A26FED65E00BACB89 /* CurvedGradientButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		E1044B8D26FED8B300BACB89 /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				E1044B8E26FED8B300BACB89 /* Poppins-ExtraLight.ttf */,
+				E1044B8F26FED8B300BACB89 /* Poppins-ThinItalic.ttf */,
+				E1044B9026FED8B300BACB89 /* Poppins-ExtraLightItalic.ttf */,
+				E1044B9126FED8B300BACB89 /* Poppins-BoldItalic.ttf */,
+				E1044B9226FED8B300BACB89 /* Poppins-Light.ttf */,
+				E1044B9326FED8B300BACB89 /* Poppins-Medium.ttf */,
+				E1044B9426FED8B300BACB89 /* Poppins-SemiBoldItalic.ttf */,
+				E1044B9526FED8B300BACB89 /* Poppins-ExtraBoldItalic.ttf */,
+				E1044B9626FED8B300BACB89 /* Poppins-ExtraBold.ttf */,
+				E1044B9726FED8B300BACB89 /* Poppins-BlackItalic.ttf */,
+				E1044B9826FED8B300BACB89 /* OFL.txt */,
+				E1044B9926FED8B300BACB89 /* Poppins-Regular.ttf */,
+				E1044B9A26FED8B300BACB89 /* Poppins-LightItalic.ttf */,
+				E1044B9B26FED8B300BACB89 /* Poppins-Bold.ttf */,
+				E1044B9C26FED8B300BACB89 /* Poppins-Black.ttf */,
+				E1044B9D26FED8B300BACB89 /* Poppins-Thin.ttf */,
+				E1044B9E26FED8B300BACB89 /* Poppins-SemiBold.ttf */,
+				E1044B9F26FED8B300BACB89 /* Poppins-Italic.ttf */,
+				E1044BA026FED8B300BACB89 /* Poppins-MediumItalic.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		E1044BCF26FEDF8500BACB89 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E1044B7F26FED19B00BACB89 /* LoginView.swift */,
+				E1044BC926FED93900BACB89 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E1044BD326FEE45600BACB89 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E1044BD426FEE47C00BACB89 /* LoginManager.swift */,
+				E1044BDD26FEE49C00BACB89 /* QuizManager.swift */,
+				E1044BD726FEE48700BACB89 /* HealthManager.swift */,
+				E1044BDA26FEE49100BACB89 /* LeaderboardManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1044B5926FECDC600BACB89 /* ShellHacksApp (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1044B6B26FECDC600BACB89 /* Build configuration list for PBXNativeTarget "ShellHacksApp (iOS)" */;
+			buildPhases = (
+				E1044B5626FECDC600BACB89 /* Sources */,
+				E1044B5726FECDC600BACB89 /* Frameworks */,
+				E1044B5826FECDC600BACB89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ShellHacksApp (iOS)";
+			packageProductDependencies = (
+				E1044B7D26FECFF500BACB89 /* SFSafeSymbols */,
+			);
+			productName = "ShellHacksApp (iOS)";
+			productReference = E1044B5A26FECDC600BACB89 /* ShellHacksApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1044B5F26FECDC600BACB89 /* ShellHacksApp (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1044B6E26FECDC600BACB89 /* Build configuration list for PBXNativeTarget "ShellHacksApp (macOS)" */;
+			buildPhases = (
+				E1044B5C26FECDC600BACB89 /* Sources */,
+				E1044B5D26FECDC600BACB89 /* Frameworks */,
+				E1044B5E26FECDC600BACB89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ShellHacksApp (macOS)";
+			productName = "ShellHacksApp (macOS)";
+			productReference = E1044B6026FECDC600BACB89 /* ShellHacksApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1044B4E26FECDC500BACB89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					E1044B5926FECDC600BACB89 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					E1044B5F26FECDC600BACB89 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = E1044B5126FECDC500BACB89 /* Build configuration list for PBXProject "ShellHacksApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1044B4D26FECDC500BACB89;
+			packageReferences = (
+				E1044B7C26FECFF500BACB89 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+			);
+			productRefGroup = E1044B5B26FECDC600BACB89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1044B5926FECDC600BACB89 /* ShellHacksApp (iOS) */,
+				E1044B5F26FECDC600BACB89 /* ShellHacksApp (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1044B5826FECDC600BACB89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1044BBD26FED8B300BACB89 /* Poppins-Black.ttf in Resources */,
+				E1044BA526FED8B300BACB89 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				E1044BAD26FED8B300BACB89 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				E1044BBF26FED8B300BACB89 /* Poppins-Thin.ttf in Resources */,
+				E1044BC326FED8B300BACB89 /* Poppins-Italic.ttf in Resources */,
+				E1044BB726FED8B300BACB89 /* Poppins-Regular.ttf in Resources */,
+				E1044BAB26FED8B300BACB89 /* Poppins-Medium.ttf in Resources */,
+				E1044BAF26FED8B300BACB89 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				E1044BA926FED8B300BACB89 /* Poppins-Light.ttf in Resources */,
+				E1044BC526FED8B300BACB89 /* Poppins-MediumItalic.ttf in Resources */,
+				E1044BA326FED8B300BACB89 /* Poppins-ThinItalic.ttf in Resources */,
+				E1044BBB26FED8B300BACB89 /* Poppins-Bold.ttf in Resources */,
+				E1044BB526FED8B300BACB89 /* OFL.txt in Resources */,
+				E1044BB126FED8B300BACB89 /* Poppins-ExtraBold.ttf in Resources */,
+				E1044BB926FED8B300BACB89 /* Poppins-LightItalic.ttf in Resources */,
+				E1044BA126FED8B300BACB89 /* Poppins-ExtraLight.ttf in Resources */,
+				E1044B6726FECDC600BACB89 /* Assets.xcassets in Resources */,
+				E1044BC126FED8B300BACB89 /* Poppins-SemiBold.ttf in Resources */,
+				E1044BA726FED8B300BACB89 /* Poppins-BoldItalic.ttf in Resources */,
+				E1044BB326FED8B300BACB89 /* Poppins-BlackItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1044B5E26FECDC600BACB89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1044BBE26FED8B300BACB89 /* Poppins-Black.ttf in Resources */,
+				E1044BA626FED8B300BACB89 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				E1044BAE26FED8B300BACB89 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				E1044BC026FED8B300BACB89 /* Poppins-Thin.ttf in Resources */,
+				E1044BC426FED8B300BACB89 /* Poppins-Italic.ttf in Resources */,
+				E1044BB826FED8B300BACB89 /* Poppins-Regular.ttf in Resources */,
+				E1044BAC26FED8B300BACB89 /* Poppins-Medium.ttf in Resources */,
+				E1044BB026FED8B300BACB89 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				E1044BAA26FED8B300BACB89 /* Poppins-Light.ttf in Resources */,
+				E1044BC626FED8B300BACB89 /* Poppins-MediumItalic.ttf in Resources */,
+				E1044BA426FED8B300BACB89 /* Poppins-ThinItalic.ttf in Resources */,
+				E1044BBC26FED8B300BACB89 /* Poppins-Bold.ttf in Resources */,
+				E1044BB626FED8B300BACB89 /* OFL.txt in Resources */,
+				E1044BB226FED8B300BACB89 /* Poppins-ExtraBold.ttf in Resources */,
+				E1044BBA26FED8B300BACB89 /* Poppins-LightItalic.ttf in Resources */,
+				E1044BA226FED8B300BACB89 /* Poppins-ExtraLight.ttf in Resources */,
+				E1044B6826FECDC600BACB89 /* Assets.xcassets in Resources */,
+				E1044BC226FED8B300BACB89 /* Poppins-SemiBold.ttf in Resources */,
+				E1044BA826FED8B300BACB89 /* Poppins-BoldItalic.ttf in Resources */,
+				E1044BB426FED8B300BACB89 /* Poppins-BlackItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1044B5626FECDC600BACB89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1044BDE26FEE49C00BACB89 /* QuizManager.swift in Sources */,
+				E1044B8826FED2AC00BACB89 /* CurvedTextFieldStyle.swift in Sources */,
+				E1044B8026FED19B00BACB89 /* LoginView.swift in Sources */,
+				E1044B7226FECE2000BACB89 /* HomeView.swift in Sources */,
+				E1044BCA26FED93900BACB89 /* OnboardingView.swift in Sources */,
+				E1044B8B26FED65E00BACB89 /* CurvedGradientButtonStyle.swift in Sources */,
+				E1044BD526FEE47C00BACB89 /* LoginManager.swift in Sources */,
+				E1044BD126FEE12700BACB89 /* ButtonData.swift in Sources */,
+				E1044BCD26FED94300BACB89 /* Onboarding.swift in Sources */,
+				E1044B6526FECDC600BACB89 /* ContentView.swift in Sources */,
+				E1044B6326FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */,
+				E1044B7A26FECF7900BACB89 /* LoadingView.swift in Sources */,
+				E1044BDB26FEE49100BACB89 /* LeaderboardManager.swift in Sources */,
+				E1044B7526FECEB400BACB89 /* Extensions.swift in Sources */,
+				E1044B8426FED22F00BACB89 /* User.swift in Sources */,
+				E1044BD826FEE48700BACB89 /* HealthManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1044B5C26FECDC600BACB89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1044BDF26FEE49C00BACB89 /* QuizManager.swift in Sources */,
+				E1044B8926FED2AC00BACB89 /* CurvedTextFieldStyle.swift in Sources */,
+				E1044B8126FED19B00BACB89 /* LoginView.swift in Sources */,
+				E1044B7326FECE2000BACB89 /* HomeView.swift in Sources */,
+				E1044BCB26FED93900BACB89 /* OnboardingView.swift in Sources */,
+				E1044B8C26FED65E00BACB89 /* CurvedGradientButtonStyle.swift in Sources */,
+				E1044BD626FEE47C00BACB89 /* LoginManager.swift in Sources */,
+				E1044BD226FEE12700BACB89 /* ButtonData.swift in Sources */,
+				E1044BCE26FED94300BACB89 /* Onboarding.swift in Sources */,
+				E1044B6626FECDC600BACB89 /* ContentView.swift in Sources */,
+				E1044B6426FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */,
+				E1044B7B26FECF7900BACB89 /* LoadingView.swift in Sources */,
+				E1044BDC26FEE49100BACB89 /* LeaderboardManager.swift in Sources */,
+				E1044B7626FECEB400BACB89 /* Extensions.swift in Sources */,
+				E1044B8526FED22F00BACB89 /* User.swift in Sources */,
+				E1044BD926FEE48700BACB89 /* HealthManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E1044B6926FECDC600BACB89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1044B6A26FECDC600BACB89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E1044B6C26FECDC600BACB89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9NG3C5HP77;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ShellHacksApp--iOS--Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ai.ShellHacksApp;
+				PRODUCT_NAME = ShellHacksApp;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1044B6D26FECDC600BACB89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9NG3C5HP77;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ShellHacksApp--iOS--Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ai.ShellHacksApp;
+				PRODUCT_NAME = ShellHacksApp;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1044B6F26FECDC600BACB89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9NG3C5HP77;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ShellHacksApp--macOS--Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ai.ShellHacksApp;
+				PRODUCT_NAME = ShellHacksApp;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E1044B7026FECDC600BACB89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9NG3C5HP77;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ShellHacksApp--macOS--Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ai.ShellHacksApp;
+				PRODUCT_NAME = ShellHacksApp;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1044B5126FECDC500BACB89 /* Build configuration list for PBXProject "ShellHacksApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1044B6926FECDC600BACB89 /* Debug */,
+				E1044B6A26FECDC600BACB89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1044B6B26FECDC600BACB89 /* Build configuration list for PBXNativeTarget "ShellHacksApp (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1044B6C26FECDC600BACB89 /* Debug */,
+				E1044B6D26FECDC600BACB89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1044B6E26FECDC600BACB89 /* Build configuration list for PBXNativeTarget "ShellHacksApp (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1044B6F26FECDC600BACB89 /* Debug */,
+				E1044B7026FECDC600BACB89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E1044B7C26FECFF500BACB89 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/piknotech/SFSafeSymbols.git";
+			requirement = {
+				branch = stable;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E1044B7D26FECFF500BACB89 /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1044B7C26FECFF500BACB89 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E1044B4E26FECDC500BACB89 /* Project object */;
+}
