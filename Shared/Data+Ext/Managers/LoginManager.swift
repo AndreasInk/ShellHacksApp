@@ -7,14 +7,6 @@
 
 import SwiftUI
 
-struct LoginManager: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct LoginManager_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginManager()
-    }
+class LoginManager: ObservableObject {
+   
 }

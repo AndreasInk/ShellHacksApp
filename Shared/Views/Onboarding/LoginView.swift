@@ -17,7 +17,9 @@ struct LoginView: View {
         TextField("Username", text: $user.userName)
             .padding()
             .textFieldStyle(CurvedTextFieldStyle())
-        
+            TextField("Email", text: $user.email)
+                .padding()
+                .textFieldStyle(CurvedTextFieldStyle())
         TextField("Password", text: $user.password)
             .padding()
             .textFieldStyle(CurvedTextFieldStyle())

@@ -80,6 +80,8 @@
 		E1044BDC26FEE49100BACB89 /* LeaderboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BDA26FEE49100BACB89 /* LeaderboardManager.swift */; };
 		E1044BDE26FEE49C00BACB89 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BDD26FEE49C00BACB89 /* QuizManager.swift */; };
 		E1044BDF26FEE49C00BACB89 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BDD26FEE49C00BACB89 /* QuizManager.swift */; };
+		E1044BE126FEE52400BACB89 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BE026FEE52400BACB89 /* Quiz.swift */; };
+		E1044BE226FEE52400BACB89 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044BE026FEE52400BACB89 /* Quiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +126,7 @@
 		E1044BD726FEE48700BACB89 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
 		E1044BDA26FEE49100BACB89 /* LeaderboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardManager.swift; sourceTree = "<group>"; };
 		E1044BDD26FEE49C00BACB89 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
+		E1044BE026FEE52400BACB89 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +206,7 @@
 				E1044B7426FECEB400BACB89 /* Extensions.swift */,
 				E1044B8326FED22F00BACB89 /* User.swift */,
 				E1044BCC26FED94300BACB89 /* Onboarding.swift */,
+				E1044BE026FEE52400BACB89 /* Quiz.swift */,
 				E1044BD026FEE12700BACB89 /* ButtonData.swift */,
 			);
 			path = "Data+Ext";
@@ -427,6 +431,7 @@
 				E1044B6326FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */,
 				E1044B7A26FECF7900BACB89 /* LoadingView.swift in Sources */,
 				E1044BDB26FEE49100BACB89 /* LeaderboardManager.swift in Sources */,
+				E1044BE126FEE52400BACB89 /* Quiz.swift in Sources */,
 				E1044B7526FECEB400BACB89 /* Extensions.swift in Sources */,
 				E1044B8426FED22F00BACB89 /* User.swift in Sources */,
 				E1044BD826FEE48700BACB89 /* HealthManager.swift in Sources */,
@@ -450,6 +455,7 @@
 				E1044B6426FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */,
 				E1044B7B26FECF7900BACB89 /* LoadingView.swift in Sources */,
 				E1044BDC26FEE49100BACB89 /* LeaderboardManager.swift in Sources */,
+				E1044BE226FEE52400BACB89 /* Quiz.swift in Sources */,
 				E1044B7626FECEB400BACB89 /* Extensions.swift in Sources */,
 				E1044B8526FED22F00BACB89 /* User.swift in Sources */,
 				E1044BD926FEE48700BACB89 /* HealthManager.swift in Sources */,
