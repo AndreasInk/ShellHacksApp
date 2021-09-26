@@ -34,7 +34,7 @@ struct ChoiceView: View {
             if quizManager.quiz.questions.indices.contains(quizManager.currentQuestion + 1) {
                 quizManager.currentQuestion += 1
             } else {
-                quizManager.takingQuiz = true
+                quizManager.done = true
             }
             
         }) {

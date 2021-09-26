@@ -128,6 +128,14 @@
 		E15FCBA426FFB3B3003BA5A2 /* NightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCBA326FFB3B3003BA5A2 /* NightView.swift */; };
 		E15FCBA526FFB3B3003BA5A2 /* NightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCBA326FFB3B3003BA5A2 /* NightView.swift */; };
 		E15FCBA926FFB5E4003BA5A2 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15FCBA826FFB5E4003BA5A2 /* HealthKit.framework */; };
+		E15FCBAB26FFCA49003BA5A2 /* FinishedQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCBAA26FFCA49003BA5A2 /* FinishedQuizView.swift */; };
+		E15FCBAC26FFCA49003BA5A2 /* FinishedQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCBAA26FFCA49003BA5A2 /* FinishedQuizView.swift */; };
+		E15FCBAE26FFCB6D003BA5A2 /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCBAD26FFCB6D003BA5A2 /* CourseListView.swift */; };
+		E15FCBAF26FFCB6D003BA5A2 /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCBAD26FFCB6D003BA5A2 /* CourseListView.swift */; };
+		E15FCBB126FFEE15003BA5A2 /* QuizListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCBB026FFEE15003BA5A2 /* QuizListView.swift */; };
+		E15FCBB226FFEE15003BA5A2 /* QuizListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCBB026FFEE15003BA5A2 /* QuizListView.swift */; };
+		E15FCBB4270087D2003BA5A2 /* EditCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCBB3270087D2003BA5A2 /* EditCourseView.swift */; };
+		E15FCBB5270087D2003BA5A2 /* EditCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FCBB3270087D2003BA5A2 /* EditCourseView.swift */; };
 		E1E84ACE26FF643E008CCD6C /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */; };
 		E1E84ACF26FF643E008CCD6C /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */; };
 /* End PBXBuildFile section */
@@ -199,6 +207,10 @@
 		E15FCBA326FFB3B3003BA5A2 /* NightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightView.swift; sourceTree = "<group>"; };
 		E15FCBA626FFB5E4003BA5A2 /* ShellHacksApp (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ShellHacksApp (iOS).entitlements"; sourceTree = "<group>"; };
 		E15FCBA826FFB5E4003BA5A2 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		E15FCBAA26FFCA49003BA5A2 /* FinishedQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedQuizView.swift; sourceTree = "<group>"; };
+		E15FCBAD26FFCB6D003BA5A2 /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
+		E15FCBB026FFEE15003BA5A2 /* QuizListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizListView.swift; sourceTree = "<group>"; };
+		E15FCBB3270087D2003BA5A2 /* EditCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCourseView.swift; sourceTree = "<group>"; };
 		E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -367,8 +379,12 @@
 			children = (
 				E1044BE426FEEF1F00BACB89 /* QuizView.swift */,
 				E1044BE726FEEF5200BACB89 /* QuestionsView.swift */,
+				E15FCBAD26FFCB6D003BA5A2 /* CourseListView.swift */,
+				E15FCBB3270087D2003BA5A2 /* EditCourseView.swift */,
+				E15FCBB026FFEE15003BA5A2 /* QuizListView.swift */,
 				E1E84ACD26FF643E008CCD6C /* QuestionListView.swift */,
 				E15FCB9426FF96EB003BA5A2 /* EditQuizView.swift */,
+				E15FCBAA26FFCA49003BA5A2 /* FinishedQuizView.swift */,
 				E1044BEB26FEFE9900BACB89 /* ConfettiView.swift */,
 			);
 			path = Quiz;
@@ -579,6 +595,7 @@
 				E1044B7226FECE2000BACB89 /* HomeView.swift in Sources */,
 				E103876626FF59BB0072760B /* MLManager.swift in Sources */,
 				E1044BCA26FED93900BACB89 /* OnboardingView.swift in Sources */,
+				E15FCBB126FFEE15003BA5A2 /* QuizListView.swift in Sources */,
 				E1044B8B26FED65E00BACB89 /* CurvedGradientButtonStyle.swift in Sources */,
 				E1044BD526FEE47C00BACB89 /* LoginManager.swift in Sources */,
 				E15FCBA426FFB3B3003BA5A2 /* NightView.swift in Sources */,
@@ -591,16 +608,19 @@
 				E103876926FF5DD50072760B /* CardView.swift in Sources */,
 				E1044B6526FECDC600BACB89 /* ContentView.swift in Sources */,
 				E1044B6326FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */,
+				E15FCBAE26FFCB6D003BA5A2 /* CourseListView.swift in Sources */,
 				E1044BE526FEEF2000BACB89 /* QuizView.swift in Sources */,
 				E1044C0126FF41EF00BACB89 /* SceneView.swift in Sources */,
 				E1044B7A26FECF7900BACB89 /* LoadingView.swift in Sources */,
 				E1044BDB26FEE49100BACB89 /* LeaderboardManager.swift in Sources */,
+				E15FCBB4270087D2003BA5A2 /* EditCourseView.swift in Sources */,
 				E1044BE126FEE52400BACB89 /* Quiz.swift in Sources */,
 				E1044B7526FECEB400BACB89 /* Extensions.swift in Sources */,
 				E15FCB9826FFAD0B003BA5A2 /* Box3DView.swift in Sources */,
 				E1044B8426FED22F00BACB89 /* User.swift in Sources */,
 				E103876C26FF5DE40072760B /* CircularProgressView.swift in Sources */,
 				E1044BD826FEE48700BACB89 /* HealthManager.swift in Sources */,
+				E15FCBAB26FFCA49003BA5A2 /* FinishedQuizView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +637,7 @@
 				E1044B7326FECE2000BACB89 /* HomeView.swift in Sources */,
 				E103876726FF59BB0072760B /* MLManager.swift in Sources */,
 				E1044BCB26FED93900BACB89 /* OnboardingView.swift in Sources */,
+				E15FCBB226FFEE15003BA5A2 /* QuizListView.swift in Sources */,
 				E1044B8C26FED65E00BACB89 /* CurvedGradientButtonStyle.swift in Sources */,
 				E1044BD626FEE47C00BACB89 /* LoginManager.swift in Sources */,
 				E15FCBA526FFB3B3003BA5A2 /* NightView.swift in Sources */,
@@ -629,16 +650,19 @@
 				E103876A26FF5DD50072760B /* CardView.swift in Sources */,
 				E1044B6626FECDC600BACB89 /* ContentView.swift in Sources */,
 				E1044B6426FECDC600BACB89 /* ShellHacksAppApp.swift in Sources */,
+				E15FCBAF26FFCB6D003BA5A2 /* CourseListView.swift in Sources */,
 				E1044BE626FEEF2000BACB89 /* QuizView.swift in Sources */,
 				E1044C0226FF41EF00BACB89 /* SceneView.swift in Sources */,
 				E1044B7B26FECF7900BACB89 /* LoadingView.swift in Sources */,
 				E1044BDC26FEE49100BACB89 /* LeaderboardManager.swift in Sources */,
+				E15FCBB5270087D2003BA5A2 /* EditCourseView.swift in Sources */,
 				E1044BE226FEE52400BACB89 /* Quiz.swift in Sources */,
 				E1044B7626FECEB400BACB89 /* Extensions.swift in Sources */,
 				E15FCB9926FFAD0B003BA5A2 /* Box3DView.swift in Sources */,
 				E1044B8526FED22F00BACB89 /* User.swift in Sources */,
 				E103876D26FF5DE40072760B /* CircularProgressView.swift in Sources */,
 				E1044BD926FEE48700BACB89 /* HealthManager.swift in Sources */,
+				E15FCBAC26FFCA49003BA5A2 /* FinishedQuizView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

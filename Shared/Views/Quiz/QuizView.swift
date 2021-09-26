@@ -11,9 +11,11 @@ struct QuizView: View {
     @ObservedObject var quizManager: QuizManager
     @State var takingQuiz = false
     var body: some View {
-        
-            QuestionsListView(quizManager: quizManager)
-       
+        CourseListView(quizManager: quizManager)
+            //QuestionsListView(quizManager: quizManager)
+            .sheet(isPresented: $quizManager.done) {
+                FinishedQuizView(quiz: $quizManager.quiz)
+            }
     }
         
     }

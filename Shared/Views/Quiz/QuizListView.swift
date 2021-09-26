@@ -1,5 +1,5 @@
 //
-//  QuestionListView.swift
+//  QuizListView.swift
 //  ShellHacksApp
 //
 //  Created by Andreas on 9/25/21.
@@ -8,11 +8,10 @@
 import SwiftUI
 import SFSafeSymbols
 
-struct QuestionsListView: View {
+struct QuizListView: View {
     
 
     @StateObject var quizManager: QuizManager
-    @Binding var quiz: Quiz
     @Binding var course: Course
     @State var mode: EditMode = .inactive //< -- Here
     @State var newTag = ""
@@ -25,14 +24,14 @@ struct QuestionsListView: View {
           List {
          
              
-                  ForEach(Array(quizManager.quiz.questions.enumerated()), id: \.offset) { questionIndex, question in
+              ForEach(Array($course.quizzes.enumerated()), id: \.offset) { questionIndex, $quiz in
                       VStack {
-                      NavigationLink(destination:  QuestionsView(quizManager: quizManager, question: $quizManager.quiz.questions[questionIndex])) {
+                          NavigationLink(destination:  QuestionsListView(quizManager: quizManager, quiz: $quiz, course: $course)) {
                           HStack {
                           VStack {
                               
                               HStack {
-                              Text(question.questionStr)
+                                  Text(quiz.id)
                                   .font(.custom("Poppins-Bold", size: 18))
                                   .foregroundColor(.Dark)
                               .multilineTextAlignment(.leading)
@@ -46,15 +45,15 @@ struct QuestionsListView: View {
                               Spacer()
                               Circle()
                                   .frame(width: 25, height: 25)
-                                  .foregroundColor(!question.picked.isEmpty ? question.correct == question.picked ? Color(.green).opacity(0.6) : Color(.red).opacity(0.6) : Color.Primary.opacity(0.2))
+                                  //.foregroundColor(!quiz.picked.isEmpty ? quiz.correct == quiz.picked ? Color(.green).opacity(0.6) : Color(.red).opacity(0.6) : Color.Primary.opacity(0.2))
                           }
                           
                       }
                           HStack {
-                              Menu(question.tag ?? "None") {
+                              Menu(quiz.tag) {
                                   ForEach(allTags, id: \.self) { tag in
                                       Button(tag, action: {
-                                          quizManager.quiz.questions[questionIndex].tag = tag
+                                          quiz.tag = tag
                                       })
                                      
                                   }
@@ -76,7 +75,7 @@ struct QuestionsListView: View {
                           }
                       } .swipeActions(edge: .trailing) {
                           Button(role: .destructive){
-                              quizManager.quiz.questions.remove(at: questionIndex)
+                              course.quizzes.remove(at: questionIndex)
                                                   } label: {
                                                       Label("Delete", systemSymbol: .trash)
                                                   }
@@ -121,7 +120,7 @@ struct QuestionsListView: View {
                       }
           }
           .sheet(isPresented: $quizManager.addQuiz) {
-              EditQuizView(quizManager: quizManager, course: $course, quiz: $quizManager.quiz)
+              EditQuizView(quizManager: quizManager, course: $course, quiz: $newQuiz)
           }
           .navigationBarItems(leading: Button(action: {
               quizManager.quiz.questions.append(Question(id: UUID().uuidString, questionStr: "", a: "", b: "", c: "", correct: "", picked: ""))

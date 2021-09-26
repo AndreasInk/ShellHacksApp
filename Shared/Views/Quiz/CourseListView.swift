@@ -1,5 +1,5 @@
 //
-//  QuestionListView.swift
+//  CourseListView.swift
 //  ShellHacksApp
 //
 //  Created by Andreas on 9/25/21.
@@ -8,31 +8,30 @@
 import SwiftUI
 import SFSafeSymbols
 
-struct QuestionsListView: View {
+struct CourseListView: View {
     
 
     @StateObject var quizManager: QuizManager
-    @Binding var quiz: Quiz
-    @Binding var course: Course
     @State var mode: EditMode = .inactive //< -- Here
     @State var newTag = ""
     @State  var allTags = UserDefaults.standard.stringArray(forKey: "allTags") ?? ["None"]
-    @State var newQuiz = Quiz(id: UUID().uuidString, questions: [Question](), tag: "", image: SFSymbol.sleep.rawValue)
+    
+    @State var newCourse = Course(id: UUID().uuidString, title: "", quizzes: [Quiz](), tag: "None", image: SFSymbol.sleep.rawValue)
     @StateObject var ML = MLManager()
       var body: some View {
-         // NavigationView {
+          NavigationView {
         
           List {
          
              
-                  ForEach(Array(quizManager.quiz.questions.enumerated()), id: \.offset) { questionIndex, question in
+                  ForEach(Array($quizManager.courses.enumerated()), id: \.offset) { questionIndex, $course in
                       VStack {
-                      NavigationLink(destination:  QuestionsView(quizManager: quizManager, question: $quizManager.quiz.questions[questionIndex])) {
+                          NavigationLink(destination:  QuizListView(quizManager: quizManager, course: $course)) {
                           HStack {
                           VStack {
                               
                               HStack {
-                              Text(question.questionStr)
+                                  Text(course.title)
                                   .font(.custom("Poppins-Bold", size: 18))
                                   .foregroundColor(.Dark)
                               .multilineTextAlignment(.leading)
@@ -46,15 +45,15 @@ struct QuestionsListView: View {
                               Spacer()
                               Circle()
                                   .frame(width: 25, height: 25)
-                                  .foregroundColor(!question.picked.isEmpty ? question.correct == question.picked ? Color(.green).opacity(0.6) : Color(.red).opacity(0.6) : Color.Primary.opacity(0.2))
+                                  //.foregroundColor(!quiz.picked.isEmpty ? quiz.correct == question.picked ? Color(.green).opacity(0.6) : Color(.red).opacity(0.6) : Color.Primary.opacity(0.2))
                           }
                           
                       }
                           HStack {
-                              Menu(question.tag ?? "None") {
+                              Menu(course.tag) {
                                   ForEach(allTags, id: \.self) { tag in
                                       Button(tag, action: {
-                                          quizManager.quiz.questions[questionIndex].tag = tag
+                                          quizManager.courses[questionIndex].tag = tag
                                       })
                                      
                                   }
@@ -75,21 +74,22 @@ struct QuestionsListView: View {
                           Spacer()
                           }
                       } .swipeActions(edge: .trailing) {
-                          Button(role: .destructive){
-                              quizManager.quiz.questions.remove(at: questionIndex)
+                          Button(role: .destructive) {
+                              quizManager.courses.remove(at: questionIndex)
                                                   } label: {
                                                       Label("Delete", systemSymbol: .trash)
                                                   }
                                               }
                       .swipeActions(edge: .trailing) {
                           Button(role: .none){
-                              quizManager.editQuiz.toggle()
+                              quizManager.editCourse.toggle()
+                             
                                                   } label: {
                                                       Label("Edit", systemSymbol: .pencil)
                                                   }
                                               }
-                      .sheet(isPresented: $quizManager.editQuiz) {
-                          EditQuizView(quizManager: quizManager, course: $course, quiz: $quizManager.quiz, toggledIndex: questionIndex)
+                      .sheet(isPresented: $quizManager.editCourse) {
+                          EditCourseView(quizManager: quizManager, course: $course, toggledIndex: questionIndex)
                       }
                       .sheet(isPresented: $quizManager.addTag) {
                           VStack {
@@ -120,12 +120,12 @@ struct QuestionsListView: View {
                           }
                       }
           }
-          .sheet(isPresented: $quizManager.addQuiz) {
-              EditQuizView(quizManager: quizManager, course: $course, quiz: $quizManager.quiz)
+          .sheet(isPresented: $quizManager.addCourse) {
+              EditCourseView(quizManager: quizManager, course: $newCourse, toggledIndex: 0)
           }
           .navigationBarItems(leading: Button(action: {
               quizManager.quiz.questions.append(Question(id: UUID().uuidString, questionStr: "", a: "", b: "", c: "", correct: "", picked: ""))
-              quizManager.addQuiz.toggle()
+              quizManager.addCourse.toggle()
           }) {
               Image(systemSymbol: .plus)
           }, trailing:
@@ -137,7 +137,7 @@ struct QuestionsListView: View {
           )
                      
                 Spacer()
-                //  }
+                  }
                       
           
           

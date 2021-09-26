@@ -9,8 +9,8 @@ import SwiftUI
 import SFSafeSymbols
 
 struct ContentView: View {
-    @State var loading = false
-    @State var onboardingFinished = true //= UserDefaults.standard.bool(forKey: "onboardingFinished")
+    @State var loading = true
+    @State var onboardingFinished =  UserDefaults.standard.bool(forKey: "onboardingFinished")
    @StateObject var quizManager = QuizManager()
     var body: some View {
        
@@ -19,9 +19,19 @@ struct ContentView: View {
                 OnboardingView(onboardingFinished: $onboardingFinished)
                 .transition(.opacity)
             } else {
-                NightView()
+               // NightView()
                 //HomeView()
-                //QuizView(quizManager: quizManager)
+                TabView {
+                QuizView(quizManager: quizManager)
+                        .tabItem {
+                            Label("Quiz", systemSymbol: .doc)
+                                        }
+                    NightView()
+                        .tabItem {
+                            Label("Sleep", systemSymbol: .moon)
+                                        }
+                           
+                }
             }
         
         if loading {
@@ -35,7 +45,59 @@ struct ContentView: View {
              
                 }}
         }
-      
+        .onAppear() {
+            let url = self.getDocumentsDirectory().appendingPathComponent("courses.txt")
+            do {
+
+                let input = try String(contentsOf: url)
+
+
+                let jsonData = Data(input.utf8)
+
+                    let decoder = JSONDecoder()
+
+
+                        let note = try decoder.decode([Course].self, from: jsonData)
+                quizManager.courses = note
+
+
+
+
+                    } catch {
+                    }
+           
+            
+
+           // process()
+                 
+        }
+        .onChange(of: quizManager.courses) { newValue in
+           
+           let encoder = JSONEncoder()
+          
+            if let encoded = try? encoder.encode(quizManager.courses) {
+               if let json = String(data: encoded, encoding: .utf8) {
+                   do {
+                       let url = self.getDocumentsDirectory().appendingPathComponent("courses.txt")
+                       try json.write(to: url, atomically: false, encoding: String.Encoding.utf8)
+                       
+                   } catch {
+                       print("erorr")
+                   }
+//                    let newItem = Item(context: managedObjectContext)
+//                    newItem.jsonDataString = json
+                  
+               }
+             
+           }
+        }
+    }
+    func getDocumentsDirectory() -> URL {
+        // find all possible documents directories for this user
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        
+        // just send back the first one, which ought to be the only one
+        return paths[0]
     }
 }
 

@@ -10,6 +10,7 @@ import SFSafeSymbols
 
 struct EditQuizView: View {
     @ObservedObject var quizManager: QuizManager
+    @Binding var course: Course
     @Binding var quiz: Quiz
     @State var openQuestions = [Int]()
     @State var toggledIndex: Int = 0
@@ -82,7 +83,7 @@ struct EditQuizView: View {
                     .font(.custom("Poppins-Bold", size: 16, relativeTo: .headline))
                     Spacer()
                 }
-                TextField("Correct", text: $question.c)
+                TextField("Correct", text: $question.correct)
                     .font(.custom("Poppins", size: 16, relativeTo: .headline))
                 }
                 Divider()
@@ -91,7 +92,9 @@ struct EditQuizView: View {
             Spacer()
            
         Button(action: {
-            
+            if quizManager.addQuiz  {
+                course.quizzes.append(quiz)
+            }
             quizManager.editQuiz = false
             quizManager.addQuiz = false
         }) {

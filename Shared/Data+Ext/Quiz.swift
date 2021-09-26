@@ -8,11 +8,16 @@
 import SwiftUI
 import SFSafeSymbols
 
-struct Course {
+struct Course: Codable, Equatable {
+    static func == (lhs: Course, rhs: Course) -> Bool {
+        return false
+    }
+    
     var id: String
+    var title: String
     var quizzes: [Quiz]
     var tag: String
-    var image: SFSymbol
+    var image: SFSymbol.RawValue
 }
 struct Quiz: Codable {
     var id: String
@@ -35,6 +40,5 @@ struct Question: Codable {
 }
 
 struct APIInput: Codable {
-    var id: String
     var text: String
 }
